@@ -2,8 +2,10 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import CookieConsent from "@/components/ui/cookie-consent";
+import { Analytics } from "@vercel/analytics/react"; // ✅ Correct import
+
 import Index from "./pages/Index";
 import About from "./pages/About";
 import Funding from "./pages/Funding";
@@ -39,11 +41,11 @@ const App = () => (
             <Route path="/careers" element={<Careers />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/terms" element={<TermsConditions />} />
-
             <Route path="*" element={<NotFound />} />
           </Routes>
           <CookieConsent />
         </BrowserRouter>
+        <Analytics /> {/* ✅ Analytics component added here */}
       </div>
     </TooltipProvider>
   </QueryClientProvider>

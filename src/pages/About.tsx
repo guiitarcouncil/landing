@@ -27,13 +27,13 @@ const About = () => {
               <div className="bg-guiitar-light p-6 md:p-8 rounded-lg">
                 <h2 className="text-xl md:text-2xl font-bold mb-3 md:mb-4 text-guiitar-primary">Our Mission</h2>
                 <p className="text-gray-700 text-sm md:text-base">
-                  To create an innovation ecosystem that empowers entrepreneurs, students, and professionals to address societal challenges through technology and innovation, fostering economic growth and sustainable development in the region.
+                  To produce success stories in innovations and start-ups that will make the young minds confident, freestanding and financially viable
                 </p>
               </div>
               <div className="bg-guiitar-light p-6 md:p-8 rounded-lg">
                 <h2 className="text-xl md:text-2xl font-bold mb-3 md:mb-4 text-guiitar-primary">Our Vision</h2>
                 <p className="text-gray-700 text-sm md:text-base">
-                  To become the premier incubation center in Gujarat, recognized nationally for excellence in innovation, entrepreneurship development, and creating impactful startups that drive positive change in society.
+                  To nurture young minds by providing platform to explore and showcase their potential along with generation of high added value with a focus on innovation as well as marketing of technologies for the betterment of Scientific, Engineering, Science & Management Communities and the Society
                 </p>
               </div>
             </div>
