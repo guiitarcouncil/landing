@@ -16,6 +16,7 @@ import {
   CollapsibleTrigger,
 } from "@/components/ui/collapsible";
 import { useIsMobile } from "@/hooks/use-mobile";
+import path from "path";
 
 // Updated type
 type TeamMember = {
@@ -39,7 +40,12 @@ const TeamCarousel = () => {
   const isMobile = useIsMobile();
   const [activeTeam, setActiveTeam] = useState("team");
   const [isOpen, setIsOpen] = useState(false);
-
+  const [copiedEmail, setCopiedEmail] = useState(null);
+  const handleEmailClick = (email) => {
+    navigator.clipboard.writeText(email);
+    setCopiedEmail(email);
+    setTimeout(() => setCopiedEmail(null), 2000);
+  };
   const [teamCategories] = useState<TeamCategory[]>([
     // Core Team
     {
@@ -48,37 +54,38 @@ const TeamCarousel = () => {
       members: [
         {
           id: 1,
-          name: "Mr. Bimal Bhayani",
-          position: "CEO, GUIITAR",
-          image:
-            "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068655/mrbimal_d4r8h2.jpg",
-          resume:
-            "https://drive.google.com/file/d/112CsLKNyusAz_DtrbrzGrpJc4odCcuKw/",
-          linkedin: "",
-          email: "",
-        },
-        {
-          id: 2,
-          name: "Mr. KiranKumar Parmar",
-          position: "Sr. Manager",
-          image:
-            "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068658/mrkiran_wpigss.jpg",
-          resume:
-            "https://drive.google.com/file/d/1ElxEwweEeZeroWkqfCd6RtrPqxKo5ZK-/",
-          linkedin: "",
-          email: "",
-        },
-        {
-          id: 3,
-          name: "Dr. Nilesh Bhadure",
-          position: "Professor",
+          name: "Dr. Nilesh Bahadure",
+          position: "CEO, GUIITAR Council",
           image:
             "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068630/drnilesh_o3ikuu.jpg",
           resume:
             "https://drive.google.com/file/d/1isIJeartTJQp5yJwirfFRPKvlNifryRJ/",
-          linkedin: "",
-          email: "",
+          linkedin:
+            "https://www.linkedin.com/in/dr-nilesh-bhaskarrao-bahadure-2396622b/",
+          email: "nilesh.bahadure@gsfcuniversity.ac.in",
         },
+        {
+          id: 2,
+          name: "Mr. KiranKumar Parmar",
+          position: "Sr. Manager, GUIITAR Council",
+          image:
+            "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068658/mrkiran_wpigss.jpg",
+          resume:
+            "https://drive.google.com/file/d/1ElxEwweEeZeroWkqfCd6RtrPqxKo5ZK-/",
+          linkedin: "https://www.linkedin.com/in/kirankumar-parmar-01b81499/",
+          email: "kiran.parmar@gsfcuniversity.ac.in",
+        },
+        // {
+        //   id: 3,
+        //   name: "Dr. Nilesh Bhadure",
+        //   position: "Professor",
+        //   image:
+        //     "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068630/drnilesh_o3ikuu.jpg",
+        //   resume:
+        //     "https://drive.google.com/file/d/1isIJeartTJQp5yJwirfFRPKvlNifryRJ/",
+        //   linkedin: "",
+        //   email: "",
+        // },
         {
           id: 4,
           name: "Mr. Akhilesh Prajapati",
@@ -212,7 +219,7 @@ const TeamCarousel = () => {
             "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068647/mr_grsinha_bhbmg4.jpg",
           resume:
             "https://drive.google.com/file/d/1SXjUbqVrwRuJtDcSR1ulK9BG3tIq_x7e/",
-          linkedin: "",
+          linkedin: "https://www.linkedin.com/in/professor-g-r-sinha-65713b18/",
           email: "",
         },
         {
@@ -308,7 +315,7 @@ const TeamCarousel = () => {
             "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068647/mr_grsinha_bhbmg4.jpg",
           resume:
             "https://drive.google.com/file/d/1D25qxtb4duKHXe2OXh9c1KaTlOZtegeM/view?usp=drive_link",
-          linkedin: "",
+          linkedin: "https://www.linkedin.com/in/professor-g-r-sinha-65713b18/",
           email: "",
         },
         {
@@ -1069,7 +1076,7 @@ const TeamCarousel = () => {
             className="w-full"
           >
             <CollapsibleTrigger className="flex items-center justify-between w-full p-4 bg-guiitar-light rounded-md text-left">
-              <span className="font-medium text-base sm:text-lg">
+              <span className="font-semibold text-base sm:text-lg">
                 {activeCategory?.name}
               </span>
               <ChevronDown
@@ -1078,21 +1085,21 @@ const TeamCarousel = () => {
                 }`}
               />
             </CollapsibleTrigger>
-            <CollapsibleContent className="mt-2 bg-white rounded-md shadow-md overflow-hidden">
+            <CollapsibleContent className="bg-white rounded-md shadow-md mt-2">
               {teamCategories.map((category) => (
                 <button
                   key={category.id}
-                  className={`w-full text-left p-3 text-sm sm:text-base ${
+                  onClick={() => handleCategoryChange(category.id)}
+                  className={`w-full text-left px-4 py-3 text-sm sm:text-base ${
                     category.id === activeTeam
                       ? "bg-guiitar-light text-guiitar-primary"
-                      : "hover:bg-gray-50"
+                      : "hover:bg-gray-100"
                   }`}
-                  onClick={() => handleCategoryChange(category.id)}
                 >
-                  <span className="flex items-center">
+                  <div className="flex items-center">
                     <Users className="mr-2 h-4 w-4" />
                     {category.name}
-                  </span>
+                  </div>
                 </button>
               ))}
             </CollapsibleContent>
@@ -1105,14 +1112,14 @@ const TeamCarousel = () => {
           onValueChange={setActiveTeam}
           className="w-full"
         >
-          <TabsList className="flex flex-wrap w-full mb-6 gap-2 sm:gap-3">
+          <TabsList className="flex flex-wrap w-full gap-2 mb-6 justify-center">
             {teamCategories.map((category) => (
               <TabsTrigger
                 key={category.id}
                 value={category.id}
-                className="flex items-center px-4 py-2 text-sm sm:text-base"
+                className="flex items-center px-3 py-2 text-sm sm:text-base"
               >
-                <Users className="mr-2 h-4 w-4" />
+                <Users className="mr-2 h-4 w-6" />
                 {category.name}
               </TabsTrigger>
             ))}
@@ -1122,16 +1129,16 @@ const TeamCarousel = () => {
 
       {activeCategory && (
         <div className="py-4">
-          <h3 className="text-xl sm:text-2xl font-semibold mb-6 text-center sm:text-left">
+          <h3 className="text-xl sm:text-2xl font-semibold mb-6 text-center">
             {activeCategory.name}
           </h3>
 
-          <Carousel opts={{ align: "start", loop: false }} className="w-full">
-            <CarouselContent className="-ml-2 md:-ml-4">
+          <Carousel opts={{ align: "center", loop: false }} className="w-full">
+            <CarouselContent className="-ml-2 sm:-ml-3">
               {activeCategory.members.map((member) => (
                 <CarouselItem
                   key={member.id}
-                  className="pl-2 md:pl-4 basis-full sm:basis-1/2 lg:basis-1/3 xl:basis-1/4"
+                  className="pl-2 sm:pl-3 basis-full sm:basis-1/2 md:basis-1/3 lg:basis-1/4"
                 >
                   <Card className="h-full hover:shadow-lg transition-shadow rounded-lg">
                     <div className="flex justify-center pt-6 pb-4">
@@ -1139,11 +1146,11 @@ const TeamCarousel = () => {
                         <img
                           src={member.image}
                           alt={member.name}
-                          className="w-24 h-24 md:w-28 md:h-28 rounded-full object-cover border-4 border-white shadow-md filter grayscale group-hover:grayscale-0 transition-all duration-300"
+                          className="w-24 h-24 sm:w-28 sm:h-28 rounded-full object-cover border-4 border-white shadow-md filter grayscale group-hover:grayscale-0 transition-all duration-300"
                         />
                       </div>
                     </div>
-                    <CardContent className="pt-2 text-center px-4">
+                    <CardContent className="text-center px-4">
                       <h4 className="font-semibold text-base sm:text-lg mb-1">
                         {member.name}
                       </h4>
@@ -1155,44 +1162,59 @@ const TeamCarousel = () => {
                           {member.bio}
                         </p>
                       )}
-                      <div className="flex justify-center space-x-4">
+                      <div className="flex justify-center gap-4 items-center">
                         {member.linkedin && (
                           <a
                             href={member.linkedin}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-gray-400 hover:text-guiitar-primary"
+                            className="text-blue-600 hover:text-blue-800"
                           >
                             <svg
-                              className="h-4 w-4"
+                              className="h-5 w-5"
                               fill="currentColor"
                               viewBox="0 0 24 24"
                             >
-                              <path d="M22.23 0H1.77C.8 0 0 .77 0 1.72v20.56C0 23.23.8 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.72V1.72C24 .77 23.2 0 22.23 0zM7.27 20.1H3.65V9.24h3.62V20.1zM5.47 7.76c-1.15 0-2.07-.9-2.07-2.01 0-1.11.92-2.01 2.07-2.01 1.14 0 2.06.9 2.06 2.01 0 1.11-.92 2.01-2.06 2.01zm14.62 12.34h-3.6v-5.61c0-1.33-.02-3.05-1.87-3.05-1.88 0-2.16 1.45-2.16 2.95v5.71h-3.6V9.24h3.45v1.58h.05c.48-.91 1.65-1.87 3.4-1.87 3.63 0 4.3 2.38 4.3 5.45v5.7z" />
+                              <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
                             </svg>
                           </a>
                         )}
                         {member.email && (
-                          <a
-                            href={`mailto:${member.email}`}
-                            className="text-gray-400 hover:text-guiitar-primary"
+                          <button
+                            onClick={() => handleEmailClick(member.email)}
+                            className="text-gray-400 hover:text-guiitar-primary relative"
                           >
                             <svg
-                              className="h-4 w-4"
+                              className="h-5 w-5"
                               fill="currentColor"
-                              viewBox="0 0 24 24"
+                              viewBox="0 0 22 22"
                             >
-                              <path d="M1.5 4.5h21v15h-21v-15zm10.5 6.75l-9-6.75h18l-9 6.75zm-10.5-5.25v13.5l7.5-6.75-7.5-6.75zm21 0l-7.5 6.75 7.5 6.75v-13.5zm-9 7.5l-3.66-2.73-7.34 6.57h21l-7.34-6.57-3.66 2.73z" />
+                              <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
                             </svg>
-                          </a>
+                            {copiedEmail === member.email && (
+                              <span className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded">
+                                Copied!
+                              </span>
+                            )}
+                          </button>
                         )}
                       </div>
                     </CardContent>
                     {member.resume && (
                       <CardFooter className="justify-center pt-2 pb-4">
-                        <Button variant="outline" className="w-full text-xs">
-                          <FileText className="mr-2 h-3 w-3" />
-                          View Resume
+                        <Button
+                          variant="outline"
+                          className="w-full text-xs"
+                          asChild
+                        >
+                          <a
+                            href={member.resume}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <FileText className="mr-2 h-3 w-3" />
+                            View Resume
+                          </a>
                         </Button>
                       </CardFooter>
                     )}
@@ -1201,9 +1223,9 @@ const TeamCarousel = () => {
               ))}
             </CarouselContent>
 
-            <div className="flex justify-center mt-6 space-x-4">
-              <CarouselPrevious className="relative static transform-none" />
-              <CarouselNext className="relative static transform-none" />
+            <div className="flex justify-center mt-6 gap-4">
+              <CarouselPrevious className="static" />
+              <CarouselNext className="static" />
             </div>
           </Carousel>
         </div>

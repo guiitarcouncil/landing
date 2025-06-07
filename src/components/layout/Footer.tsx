@@ -110,19 +110,19 @@ const Footer = () => {
               <li className="flex items-start">
                 <FontAwesomeIcon icon={faMapMarkerAlt} className="text-guiitar-accent mr-3 mt-1" />
                 <span className="text-gray-300">
-                  GSFC University Campus, Vigyan Bhavan, P.O. Fertilizer Nagar, Vadodara - 391750, Gujarat, India
+                 Event Room, Second Floor,Anviksha - GSFC University,Vadodara, Gujarat - 391750,India
                 </span>
               </li>
               <li className="flex items-center">
                 <FontAwesomeIcon icon={faPhoneAlt} className="text-guiitar-accent mr-3" />
                 <a href="tel:+919898989898" className="text-gray-300 hover:text-guiitar-accent transition-colors">
-                  +91 98989 89898
+                 +91 93132 62712
                 </a>
               </li>
               <li className="flex items-center">
                 <FontAwesomeIcon icon={faEnvelope} className="text-guiitar-accent mr-3" />
                 <a href="mailto:info@guiitarcouncil.org" className="text-gray-300 hover:text-guiitar-accent transition-colors">
-                  info@guiitarcouncil.org
+                 guiitar@gsfcuniversity.ac.in
                 </a>
               </li>
 
