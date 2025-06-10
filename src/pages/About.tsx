@@ -100,13 +100,57 @@ const About = () => {
               <h2 className="text-2xl md:text-3xl font-bold mb-8 md:mb-12 text-center">
                 Message from Leadership
               </h2>
+              {/* President */}
 
               <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 md:gap-8">
                 <div className="text-center">
                   <div className="mb-4">
                     <img
+                      src="https://res.cloudinary.com/dopcjxehj/image/upload/v1743068724/pk_taneja_pq9i2q.jpg"
+                      alt="Dr. Nilesh Bhadure - CEO"
+                      className="w-32 h-32 md:w-40 md:h-40 rounded-lg mx-auto object-cover shadow-md"
+                    />
+                  </div>
+                  <h3 className="text-lg md:text-xl font-bold mb-2 text-guiitar-primary">
+                   Shri P. K. Taneja, IAS (Retd.) Chairman, GUIITAR
+                  </h3>
+                  <p className="text-sm text-gray-600 mb-3">
+                     President, GSFC University
+                  </p>
+                  <p className="text-sm md:text-base text-gray-700 leading-relaxed">
+                   "Create an environment of excellence through innovation for you will forever be remembered for 
+                   your contribution to the world. Innovation is a journey in which you have to say no to 
+                   thousands of things which already exist while embracing the one which is yet to come"
+                  </p>
+                </div>
+                
+                <div className="text-center">
+                  <div className="mb-4">
+                    <img
+                      src="https://res.cloudinary.com/dopcjxehj/image/upload/v1743068647/mr_grsinha_bhbmg4.jpg"
+                      alt="Dr. G. R. Sinha"
+                      className="w-32 h-32 md:w-40 md:h-40 rounded-lg mx-auto object-cover shadow-md"
+                    />
+                  </div>
+                  <h3 className="text-lg md:text-xl font-bold mb-2 text-guiitar-primary">
+                   Dr. G. R. Sinha
+                  </h3>
+                  <p className="text-sm text-gray-600 mb-3">
+                      Provost, GSFC University
+                  </p>
+                  <p className="text-sm md:text-base text-gray-700 leading-relaxed">
+                  "Innovation is not to repeat a success story but to
+                    celebrate a failure. Pick-up and never Give-up is an
+                    attitude towards innovation"
+                  </p>
+                </div>
+
+                {/* Provost */}
+                <div className="text-center">
+                  <div className="mb-4">
+                    <img
                       src="https://res.cloudinary.com/dopcjxehj/image/upload/v1743068630/drnilesh_o3ikuu.jpg"
-                      alt="Mr. Arjun Mehta - CEO"
+                      alt="  Dr. Nilesh Bhadure - CEO"
                       className="w-32 h-32 md:w-40 md:h-40 rounded-lg mx-auto object-cover shadow-md"
                     />
                   </div>
@@ -117,55 +161,9 @@ const About = () => {
                     CEO, GUIITAR COUNCIL
                   </p>
                   <p className="text-sm md:text-base text-gray-700 leading-relaxed">
-                    "Every great innovation starts with a single spark of
-                    curiosity. In the world of startups, it's not the resources
-                    you have, but the relentless pursuit of your vision that
-                    turns ideas into reality."
-                  </p>
-                </div>
-                {/* President */}
-                <div className="text-center">
-                  <div className="mb-4">
-                    <img
-                      src="https://res.cloudinary.com/dopcjxehj/image/upload/v1743068724/pk_taneja_pq9i2q.jpg"
-                      alt="Dr. Rajesh Patel - President"
-                      className="w-32 h-32 md:w-40 md:h-40 rounded-lg mx-auto object-cover shadow-md"
-                    />
-                  </div>
-                  <h3 className="text-lg md:text-xl font-bold mb-2 text-guiitar-primary">
-                    Shri P. K. Taneja, IAS (Retd.) Chairman, GUIITAR
-                  </h3>
-                  <p className="text-sm text-gray-600 mb-3">
-                    President, GUIITAR COUNCIL
-                  </p>
-                  <p className="text-sm md:text-base text-gray-700 leading-relaxed">
-                    "Create an environment of excellence through innovation for
-                    you will forever be remembered for your contribution to the
-                    world. Innovation is a journey in which you have to say no
-                    to thousands of things which already exist while embracing
-                    the one which is yet to come"
-                  </p>
-                </div>
-
-                {/* Provost */}
-                <div className="text-center">
-                  <div className="mb-4">
-                    <img
-                      src="https://res.cloudinary.com/dopcjxehj/image/upload/v1743068647/mr_grsinha_bhbmg4.jpg"
-                      alt="Dr. Priya Sharma - Provost"
-                      className="w-32 h-32 md:w-40 md:h-40 rounded-lg mx-auto object-cover shadow-md"
-                    />
-                  </div>
-                  <h3 className="text-lg md:text-xl font-bold mb-2 text-guiitar-primary">
-                    Dr. G. R. Sinha
-                  </h3>
-                  <p className="text-sm text-gray-600 mb-3">
-                    Provost, GUIITAR COUNCIL
-                  </p>
-                  <p className="text-sm md:text-base text-gray-700 leading-relaxed">
-                    "Innovation is not to repeat a success story but to
-                    celebrate a failure. Pick-up and never Give-up is an
-                    attitude towards innovation"
+                  "Every great innovation starts with a single spark of curiosity. 
+                   In the world of startups, it's not the resources you have, 
+                  but the relentless pursuit of your vision that turns ideas into reality."
                   </p>
                 </div>
               </div>
