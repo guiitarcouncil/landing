@@ -945,7 +945,7 @@ const TeamCarousel = () => {
           resume:
             "https://drive.google.com/file/d/1la_2SILlCEtfEqzgV0Klq5bXEFdFJ95R/view?usp=sharing",
           linkedin: "https://www.linkedin.com/in/mistry-foram/",
-          email: "",
+          email: "tc4guiitar@gsfcuniversity.ac.in",
         },
         {
           id: 2,
@@ -956,7 +956,7 @@ const TeamCarousel = () => {
           resume:
             "https://drive.google.com/file/d/1U1y8UrjXI7msX5wbgbTD2h1VGwlMNaiv/view?usp=sharing",
           linkedin: "",
-          email: "",
+          email: "tc3guiitar@gsfcuniversity.ac.in",
         },
 
         {
