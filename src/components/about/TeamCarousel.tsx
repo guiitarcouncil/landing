@@ -94,8 +94,8 @@ const TeamCarousel = () => {
             "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068630/drprajapati_ypczef.jpg",
           resume:
             "https://drive.google.com/file/d/1Br9gUAJ1BXvaTveLrCcnPlYRREHgGRb2/",
-          linkedin: "",
-          email: "",
+          linkedin: "https://www.linkedin.com/in/dr-akhilesh-prajapati-39b20a21/",
+          email: "akhilesh.prajapati@gsfcuniversity.ac.in",
         },
         {
           id: 5,
@@ -105,8 +105,8 @@ const TeamCarousel = () => {
             "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068629/drmihir_eh0zjh.jpg",
           resume:
             "https://drive.google.com/file/d/12wxMOWeDQjf1SQQp38XM9Arv9U0YghSp/",
-          linkedin: "",
-          email: "",
+          linkedin: "https://www.linkedin.com/in/dr-mihir-trivedi-5130132a1/",
+          email: "mihir.trivedi@gsfcuniversity.ac.in",
         },
         {
           id: 6,
@@ -116,8 +116,8 @@ const TeamCarousel = () => {
             "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068627/drchandra_lrl3it.jpg",
           resume:
             "https://drive.google.com/file/d/19uPcJ5kAL6r1YaAw6_Iyfy679Zeb1zQu/",
-          linkedin: "",
-          email: "",
+          linkedin: "https://www.linkedin.com/in/haschandra/",
+          email: "chandra.has@gsfcuniversity.ac.in",
         },
         {
           id: 7,
@@ -126,8 +126,8 @@ const TeamCarousel = () => {
           image:
             "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068628/drjignesh_kdyj4f.jpg",
           resume: "",
-          linkedin: "",
-          email: "",
+          linkedin: "https://www.linkedin.com/in/dr-jignesh-b-valand-b3686032/",
+          email: "jignesh.valand@gsfcuniversity.ac.in",
         },
         {
           id: 8,
@@ -136,8 +136,8 @@ const TeamCarousel = () => {
           image:
             "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068631/drrahul_lhskon.jpg",
           resume: "",
-          linkedin: "",
-          email: "",
+          linkedin: "https://www.linkedin.com/in/dr-rahul-sharma-81a4b68/",
+          email: "rahul.sharma@gsfcuniversity.ac.in",
         },
         {
           id: 9,
@@ -146,8 +146,8 @@ const TeamCarousel = () => {
           image:
             "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068649/MrAbidhusain_q28i3r.jpg",
           resume: "",
-          linkedin: "",
-          email: "",
+          linkedin: "https://www.linkedin.com/in/abidhusain-lodha-346023339/",
+          email: "abidhusain.lodha@gsfcuniversity.ac.in",
         },
         {
           id: 10,
@@ -156,8 +156,8 @@ const TeamCarousel = () => {
           image:
             "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068718/MsCharmi_jg7rq3.jpg",
           resume: "",
-          linkedin: "",
-          email: "",
+          linkedin: "https://www.linkedin.com/in/charmi-mehta-9a196b134/",
+          email: "charmi.mehta@gsfcuniversity.ac.in",
         },
         {
           id: 11,
@@ -168,7 +168,7 @@ const TeamCarousel = () => {
           resume:
             "https://drive.google.com/file/d/1LosN0oHzTspRaGwY-gN3g9lKCL7q5j_u/view?usp=sharing",
           linkedin: "",
-          email: "",
+          email: "anup.upadhaya@gsfcuniversity.ac.in",
         },
         {
           id: 12,
@@ -178,8 +178,8 @@ const TeamCarousel = () => {
             "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068742/chaitalikarpe_qp8mqs.jpg",
           resume:
             "https://drive.google.com/file/d/1T1B5vGOpiyn9s9fX-FrMLQjIAFpOlmeM/view?usp=sharing",
-          linkedin: "",
-          email: "",
+          linkedin: "https://www.linkedin.com/in/chaitali-karpe-734616328/",
+          email: "chaitali.karpe@gsfcuniversity.ac.in",
         },
         {
           id: 13,
@@ -189,8 +189,8 @@ const TeamCarousel = () => {
             "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068642/hemantsir_irkbsj.jpg",
           resume:
             "https://drive.google.com/file/d/1j3pqIx6TDc_rbHZG58SqJEfE9S_MbTyY/view?usp=sharing",
-          linkedin: "",
-          email: "",
+          linkedin: "https://www.linkedin.com/in/hemant-m-rajput-9a4465258/",
+          email: "hement.rajpoot@gsfcuniversity.ac.in",
         },
       ],
     },
@@ -208,7 +208,7 @@ const TeamCarousel = () => {
             "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068724/pk_taneja_pq9i2q.jpg",
           resume:
             "https://drive.google.com/file/d/19leo-CdgJGIbK21nzL5gi4-j6Th2SJnf/",
-          linkedin: "",
+          linkedin: "https://www.linkedin.com/in/p-k-taneja-056496293/",
           email: "",
         },
         {
@@ -241,7 +241,7 @@ const TeamCarousel = () => {
             "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068655/mrbimal_d4r8h2.jpg",
           resume:
             "https://drive.google.com/file/d/1ATHFSVbUNnHvcH-PORVVjdW4kIpm5IUL/",
-          linkedin: "",
+          linkedin: "https://www.linkedin.com/in/bimal-bhayani-156b67aa/",
           email: "",
         },
         {
@@ -252,7 +252,7 @@ const TeamCarousel = () => {
             "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068661/mrpujan_ov7rvt.jpg",
           resume:
             "https://drive.google.com/file/d/1eK7502orqHyc0hbFHZVwbK-AjK-A42xo/",
-          linkedin: "",
+          linkedin: "https://www.linkedin.com/in/pujan-vaishnav-23867810/",
           email: "",
         },
         {
@@ -274,7 +274,7 @@ const TeamCarousel = () => {
             "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068666/mrravin_zsrq5f.jpg",
           resume:
             "https://drive.google.com/file/d/1jt9oDu-DKihnSx8JThanmrfrZnX8CxY4/",
-          linkedin: "",
+          linkedin: "https://www.linkedin.com/in/ravin-sanghavi-19100613/",
           email: "",
         },
         {
@@ -285,7 +285,7 @@ const TeamCarousel = () => {
             "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068721/msswati_yw12e4.jpg",
           resume:
             "https://drive.google.com/file/d/1C-xPhamxA2bZvjqFWPaQPmdIDXhqgJKA/",
-          linkedin: "",
+          linkedin: "https://www.linkedin.com/in/swati-bedekar-5a9ba42b/",
           email: "",
         },
       ],
@@ -304,7 +304,7 @@ const TeamCarousel = () => {
             "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068655/mrbimal_d4r8h2.jpg",
           resume:
             "https://drive.google.com/file/d/112CsLKNyusAz_DtrbrzGrpJc4odCcuKw/view?usp=drive_link",
-          linkedin: "",
+          linkedin: "https://www.linkedin.com/in/bimal-bhayani-156b67aa/",
           email: "",
         },
         {
@@ -326,7 +326,7 @@ const TeamCarousel = () => {
             "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068629/drmadhukumar_o8pfhu.jpg",
           resume:
             "https://drive.google.com/file/d/1TLGCNmJ-5l200UdUDf97CXYndlspTUUZ/view?usp=drive_link",
-          linkedin: "",
+          linkedin: "https://www.linkedin.com/in/madhukumar-mehta-4129917/",
           email: "",
         },
         {
@@ -337,12 +337,12 @@ const TeamCarousel = () => {
             "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068665/mrramanan_t90lph.jpg",
           resume:
             "https://drive.google.com/file/d/16STS2iKqGGcaUzEtHfY_fYdvWIASZMgw/view?usp=drive_link",
-          linkedin: "",
+          linkedin: "http://linkedin.com/in/rramanan27/",
           email: "",
         },
         {
           id: 5,
-          name: "Mr. Anupam Jatole",
+          name: "Mr. Anupam Jatole",//linkedin
           position: "Advisor",
           image:
             "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068652/mranupam_pohuly.jpg",
@@ -353,7 +353,7 @@ const TeamCarousel = () => {
         },
         {
           id: 6,
-          name: "Mr. Hemal Patel",
+          name: "Mr. Hemal Patel",//linkedin
           position: "Advisor",
           image:
             "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068656/mrhemal_fzbb5p.jpg",
@@ -370,7 +370,7 @@ const TeamCarousel = () => {
             "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068680/mrshankar_d8pvxh.jpg",
           resume:
             "https://drive.google.com/file/d/1fgdUmTy9v5aHHtlFkwVQwA2BPHTWUpAw/view?usp=sharing",
-          linkedin: "",
+          linkedin: "https://www.linkedin.com/in/shankarrele/",
           email: "",
         },
         {
@@ -378,10 +378,10 @@ const TeamCarousel = () => {
           name: "Dr. Nilesh Khare",
           position: "Advisor",
           image:
-            "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068660/mrnirav_iqrfx1.jpg",
+            "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068659/mrnilesh_cj0yal.jpg",
           resume:
             "https://drive.google.com/file/d/1Qnj1kWneo7hyZHwT9ltsvKUaV6vhpnfz/view?usp=drive_link",
-          linkedin: "",
+          linkedin: "https://www.linkedin.com/in/nileshkhare/",
           email: "",
         },
         {
@@ -392,7 +392,7 @@ const TeamCarousel = () => {
             "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068719/mspoyni_bpxhog.jpg",
           resume:
             "https://drive.google.com/file/d/1BTs1MGyeIdLx4OB9DebVBPKOpLbKunTN/view?usp=drive_link",
-          linkedin: "",
+          linkedin: "https://www.linkedin.com/in/poyni-bhatt-972b932/",
           email: "",
         },
         {
@@ -403,7 +403,7 @@ const TeamCarousel = () => {
             "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068737/bhaveshChelani_raywik.jpg",
           resume:
             "https://drive.google.com/file/d/1cthr78T5xMwFCGP7YnoPjvaOGCdJzUmC/view?usp=drive_link",
-          linkedin: "",
+          linkedin: "https://www.linkedin.com/in/bhaveshchelani-santushti-dessertino/",
           email: "",
         },
         {
@@ -425,7 +425,7 @@ const TeamCarousel = () => {
             "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068651/mrali_cardsj.jpg",
           resume:
             "https://drive.google.com/file/d/1KSPaeV-Z0MIujKIvjaeJfZEw6CFvEhld/view?usp=drive_link",
-          linkedin: "",
+          linkedin: "https://www.linkedin.com/in/tidesiitr/",
           email: "",
         },
         {
@@ -455,7 +455,7 @@ const TeamCarousel = () => {
             "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068727/sanjukta_bose_k4tfew.jpg",
           resume:
             "https://drive.google.com/file/d/1oUzPVx2ZyouUqacRfDDSeRTkqsBJQBIH/view?usp=sharing",
-          linkedin: "",
+          linkedin: "https://www.linkedin.com/in/sanjukta-bose-goswami/",
           email: "",
         },
         {
@@ -466,7 +466,7 @@ const TeamCarousel = () => {
             "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068632/drTrivedi_efxgjx.jpg",
           resume:
             "https://drive.google.com/file/d/1A2q3HkyB8UPMfXCWcSFfjG1ob5zg_cuw/view?usp=sharing",
-          linkedin: "",
+          linkedin: "https://www.linkedin.com/in/bhartitrivedi/",
           email: "",
         },
         {
@@ -477,7 +477,7 @@ const TeamCarousel = () => {
             "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068718/msmagare_ocjvny.jpg",
           resume:
             "https://drive.google.com/file/d/18SrHuomt-nJXyOCr2BOz1R67WOEq79_G/view?usp=sharing",
-          linkedin: "",
+          linkedin: "https://www.linkedin.com/in/archana-magare-068a7253/",
           email: "",
         },
         {
@@ -488,7 +488,7 @@ const TeamCarousel = () => {
             "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068646/mosamPatel_luof6n.jpg",
           resume:
             "https://drive.google.com/file/d/1118j5nUZCXwib9PAQWEX6-QhY64eu3Ns/view?usp=sharing",
-          linkedin: "",
+          linkedin: "https://www.linkedin.com/in/mosam-patel-336495a1/",
           email: "",
         },
         {
@@ -499,7 +499,7 @@ const TeamCarousel = () => {
             "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068630/drprajapati_ypczef.jpg",
           resume:
             "https://drive.google.com/file/d/113w46kL1amfBIjEpStdAj6quOW4KLrnh/view?usp=sharing",
-          linkedin: "",
+          linkedin: "https://www.linkedin.com/in/dr-akhilesh-prajapati-39b20a21/",
           email: "",
         },
         {
@@ -510,7 +510,7 @@ const TeamCarousel = () => {
             "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068624/devjaniBanerjee_tlo8oe.jpg",
           resume:
             "https://drive.google.com/file/d/17lLS0KlbIGr7IQusyJjNAVBFGrDWFkwm/view?usp=sharing",
-          linkedin: "",
+          linkedin: "https://www.linkedin.com/in/prof-devjani-banerjee-1336b859/",
           email: "",
         },
         {
@@ -521,18 +521,18 @@ const TeamCarousel = () => {
             "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068619/chetnaParmar_yfnx5c.jpg",
           resume:
             "https://drive.google.com/file/d/1FwSxe7Wzou8lnaDJ-_tCtX5Ud0f0mA6T/view?usp=sharing",
-          linkedin: "",
+          linkedin: "https://www.linkedin.com/in/dr-chetna-parmar-118857200/",
           email: "",
         },
         {
           id: 8,
-          name: "Dr. Arti Bhadoria",
+          name: "Dr. Arti Bhadoria",//linkedin
           position: "Assistant Professor",
           image:
             "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068734/artiBhadoria_xqz49x.jpg",
           resume:
             "https://drive.google.com/file/d/1x0fC1FwVlDKEQnWv0z7OVVk8Itl68_f4/view?usp=sharing",
-          linkedin: "",
+          linkedin: "https://www.linkedin.com/in/dr-arti-bhadouria-9816a690/",
           email: "",
         },
         {
@@ -543,7 +543,7 @@ const TeamCarousel = () => {
             "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068723/parinKanaiya_ncss5w.jpg",
           resume:
             "https://drive.google.com/file/d/1-3OHEchNo4efjv6bmnDpNFqruRnjSuqK/view?usp=sharing",
-          linkedin: "",
+          linkedin: "https://www.linkedin.com/in/dr-parin-kanaiya-269819283/",
           email: "",
         },
         {
@@ -554,7 +554,7 @@ const TeamCarousel = () => {
             "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068730/swatiSaxena_int6i1.jpg",
           resume:
             "https://drive.google.com/file/d/1vBzRUcKz506cpJu0lbzZvK5-EfGo3gZa/view?usp=sharing",
-          linkedin: "",
+          linkedin: "https://www.linkedin.com/in/swati-saxena-615419166/",
           email: "",
         },
         {
@@ -565,7 +565,7 @@ const TeamCarousel = () => {
             "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068735/artiHansda_gv8r2e.jpg",
           resume:
             "https://drive.google.com/file/d/1xHbWbvWJ3q3gKB5k3tLhFnKaIxlKByas/view?usp=sharing",
-          linkedin: "",
+          linkedin: "https://www.linkedin.com/in/dr-arti-hansda-2ab1a273/",
           email: "",
         },
       ],
@@ -584,7 +584,7 @@ const TeamCarousel = () => {
             "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068726/rupeshShah_odommw.jpg",
           resume:
             "https://drive.google.com/file/d/1gDR1HkvgLwi00oeI1p18gZbH5uUyqmiG/view?usp=sharing",
-          linkedin: "",
+          linkedin: "https://www.linkedin.com/in/barodaweb/",
           email: "",
         },
         {
@@ -595,7 +595,7 @@ const TeamCarousel = () => {
             "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068729/sudhirGupta_ozqefj.jpg",
           resume:
             "https://drive.google.com/file/d/1lcGUw_iv5QV_26Ws1Yw8L90m7xfyRwli/view?usp=sharing",
-          linkedin: "",
+          linkedin: "https://www.linkedin.com/in/sudhir2016/",
           email: "",
         },
         {
@@ -606,7 +606,7 @@ const TeamCarousel = () => {
             "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068626/dhruvNath_ba3e2w.jpg",
           resume:
             "https://drive.google.com/file/d/1Xc4elkNejWYzfkdsWpvp1gzy5xeO7rZV/view?usp=sharing",
-          linkedin: "",
+          linkedin: "https://www.linkedin.com/in/dhruvnathprof/",
           email: "",
         },
         {
@@ -617,7 +617,7 @@ const TeamCarousel = () => {
             "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068666/mrravin_zsrq5f.jpg",
           resume:
             "https://drive.google.com/file/d/1buZ3lzvPBI4KuKT5ePXjW73I85Ua8MRW/view?usp=sharing",
-          linkedin: "",
+          linkedin: "https://www.linkedin.com/in/ravin-sanghavi-19100613/",
           email: "",
         },
         {
@@ -639,7 +639,7 @@ const TeamCarousel = () => {
             "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068639/kalpeshShah_joqjhn.jpg",
           resume:
             "https://drive.google.com/file/d/12lHXezQ2B8cWsozcIfHbj8Uyuh1Mnk6C/view?usp=sharing",
-          linkedin: "",
+          linkedin: "https://www.linkedin.com/in/kalpesh-shah-finance/",
           email: "",
         },
         {
@@ -650,7 +650,7 @@ const TeamCarousel = () => {
             "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068633/HITESH_PORWAL_u14kdn.jpg",
           resume:
             "https://drive.google.com/file/d/1Ghm7j6Aank9BTTqNoPDz0xPSGwfnjYtz/view?usp=sharing",
-          linkedin: "",
+          linkedin: "https://www.linkedin.com/in/hiteshporwal-bizstart/",
           email: "",
         },
         {
@@ -659,8 +659,8 @@ const TeamCarousel = () => {
           position: "Founder Director, Millennium Divas Pvt Ltd",
           image:
             "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068738/bhaveshKothari_ibrrho.jpg",
-          resume: "", // no resume url provided
-          linkedin: "",
+          resume: "https://drive.google.com/file/d/17ffQE3p6HXSjGNKmHSEPAEGzbj5LPJPv/view?usp=sharing", // no resume url provided
+          linkedin: "https://www.linkedin.com/in/bhaveshkothari1511/",
           email: "",
         },
         {
@@ -671,7 +671,7 @@ const TeamCarousel = () => {
             "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068739/Bhavik_tlzsaf.jpg",
           resume:
             "https://drive.google.com/file/d/1a8cWlJHsIFx2EZgnE73-8LeUgl1eAVqB/view?usp=sharing",
-          linkedin: "",
+          linkedin: "https://www.linkedin.com/in/bhavikpatel91/",
           email: "",
         },
         {
@@ -682,7 +682,7 @@ const TeamCarousel = () => {
             "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068741/brijeshGarala_ymszsa.jpg",
           resume:
             "https://drive.google.com/file/d/1EvWbHJJzWueXRr45BY6n6zMvONxnzRHo/view?usp=sharing",
-          linkedin: "",
+          linkedin: "",//linkedin
           email: "",
         },
         {
@@ -693,18 +693,18 @@ const TeamCarousel = () => {
             "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068737/bhaveshChelani_raywik.jpg",
           resume:
             "https://drive.google.com/file/d/1u76LLO0J3VvjYAw3PEqORO1ip9WfHzau/view?usp=sharing",
-          linkedin: "",
+          linkedin: "https://www.linkedin.com/in/bhaveshchelani-santushti-dessertino/",
           email: "",
         },
         {
           id: 12,
-          name: "Mr. Saurabh Jain",
+          name: "Mr. x",
           position: "Founder, FUN2DO Labs Pvt. Ltd.",
           image:
             "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068728/saurabhJain_qbia4b.jpg",
           resume:
             "https://drive.google.com/file/d/1ixapMeLl9HQi8bXyR-YuOf5vCmlvQEPQ/view?usp=sharing",
-          linkedin: "",
+          linkedin: "https://www.linkedin.com/in/saurabhskj/",
           email: "",
         },
         {
@@ -715,7 +715,7 @@ const TeamCarousel = () => {
             "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068644/kavitaSaxena_dzfbg1.jpg",
           resume:
             "https://drive.google.com/file/d/1C-qH82RFvUHY52J9P1nv9O2YJ8O2sJxZ/view?usp=sharing",
-          linkedin: "",
+          linkedin: "https://www.linkedin.com/in/dr-kavita-sharma-saxena-6460507/",
           email: "",
         },
         {
@@ -726,7 +726,7 @@ const TeamCarousel = () => {
             "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068730/sureshOthayoth_nrjh3x.jpg",
           resume:
             "https://drive.google.com/file/d/1PcYrRv6OjBhh_E_zLqBYSV6_lR39jr82/view?usp=sharing",
-          linkedin: "",
+          linkedin: "https://www.linkedin.com/in/dr-suresh-puthiyaveetil-othayoth-43950316/",
           email: "",
         },
         {
@@ -737,7 +737,7 @@ const TeamCarousel = () => {
             "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068736/ashutoshTewari_qjytum.jpg",
           resume:
             "https://drive.google.com/file/d/1pu9qzx8Kud2LF1YL_jj4t-gkFaMLN0eq/view?usp=sharing",
-          linkedin: "",
+          linkedin: "https://www.linkedin.com/in/ashutoshtewari/",
           email: "",
         },
         {
@@ -748,7 +748,7 @@ const TeamCarousel = () => {
             "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068621/chintanPopat_vyngwy.jpg",
           resume:
             "https://drive.google.com/file/d/1R9EaNCrDYw-AHjRsjSfq6tqTqPYjLg6v/view?usp=sharing",
-          linkedin: "",
+          linkedin: "https://www.linkedin.com/in/ca-cs-cpa-chintan-popat-5b1878111/",
           email: "",
         },
         {
@@ -759,7 +759,7 @@ const TeamCarousel = () => {
             "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068623/deveshChawla_e931vr.jpg",
           resume:
             "https://drive.google.com/file/d/1JZLj_JVbb8EF0Yo-GDzNzPDT69ch82mE/view?usp=sharing",
-          linkedin: "",
+          linkedin: "https://www.linkedin.com/in/devesh-chawla/",
           email: "",
         },
         {
@@ -770,7 +770,7 @@ const TeamCarousel = () => {
             "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068737/ashwinParikh_pvlsbh.jpg",
           resume:
             "https://drive.google.com/file/d/1l-HmtkNGJHeY0jxk-Qw7LcSO4XvE_K5v/view?usp=sharing",
-          linkedin: "",
+          linkedin: "https://www.linkedin.com/in/ashwin2008/",
           email: "",
         },
         {
@@ -781,7 +781,7 @@ const TeamCarousel = () => {
             "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068637/jekishanParmar_qruizp.jpg",
           resume:
             "https://drive.google.com/file/d/1F7Oh25AAxGb18MR0t9eBjq7xbkZj0X2Y/view?usp=sharing",
-          linkedin: "",
+          linkedin: "https://www.linkedin.com/in/jekishan-k-parmar-1240b77a/",
           email: "",
         },
         {
@@ -815,7 +815,7 @@ const TeamCarousel = () => {
             "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068622/devangPatel_nqxnwm.jpg",
           resume:
             "https://drive.google.com/file/d/1S2XxVnFONBHY_1hj9cWnffWtiTQkLsn3/view?usp=sharing",
-          linkedin: "",
+          linkedin: "https://www.linkedin.com/in/devang-patel-93766a1a/",
           email: "",
         },
         {
@@ -826,7 +826,7 @@ const TeamCarousel = () => {
             "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068725/PRAKASH_VAGHASIYA_dils92.jpg",
           resume:
             "https://drive.google.com/file/d/1lyWrT_2v3DLu70QWWnaKp7bT2HkYMtAJ/view?usp=sharing",
-          linkedin: "",
+          linkedin: "https://www.linkedin.com/in/prakashvaghasiya/",
           email: "",
         },
         {
@@ -837,7 +837,7 @@ const TeamCarousel = () => {
             "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068636/javidShaikh_w5rso1.jpg",
           resume:
             "https://drive.google.com/file/d/1-kDCOUnHgwhuAnxfqXj0mNe-t3U8ZDFR/view?usp=sharing",
-          linkedin: "",
+          linkedin: "https://www.linkedin.com/in/javid-shaikh-9b746774/",
           email: "",
         },
         {
@@ -859,7 +859,7 @@ const TeamCarousel = () => {
             "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068741/BHAVIK_BHANSALI_cdzcjl.jpg",
           resume:
             "https://drive.google.com/file/d/1bV86MzReEqcAQK5qAl2i1b8kzo7Hz_8v/view?usp=sharing",
-          linkedin: "",
+          linkedin: "https://www.linkedin.com/in/bhavikbhansali/",
           email: "",
         },
         {
@@ -870,7 +870,7 @@ const TeamCarousel = () => {
             "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068732/akash_dadhania_frz2do.jpg",
           resume:
             "https://drive.google.com/file/d/1F1csjoYcnvLZNECqkMxl9IMn1AxOrL2H/view?usp=sharing",
-          linkedin: "",
+          linkedin: "https://www.linkedin.com/in/akash-dadhania-7464b4329/",
           email: "",
         },
         {
@@ -914,7 +914,7 @@ const TeamCarousel = () => {
             "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068643/karmjitsinhBihola_tonpdi.jpg",
           resume:
             "https://drive.google.com/file/d/1ryklHLR4TjL9N3CV97cgq6EvHXHv1zU3/view?usp=sharing",
-          linkedin: "",
+          linkedin: "https://www.linkedin.com/in/karmjitsinh-bihola-44160020/",
           email: "",
         },
         {
@@ -925,7 +925,7 @@ const TeamCarousel = () => {
             "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068733/anantAcharya_pdpleu.jpg",
           resume:
             "https://drive.google.com/file/d/1YY6bpRR3HoSNtWcnJRsJEV1TWy2tnvvU/view?usp=sharing",
-          linkedin: "",
+          linkedin: "https://www.linkedin.com/in/acharya-anant/",
           email: "",
         },
       ],
@@ -944,8 +944,8 @@ const TeamCarousel = () => {
             "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068646/foram_msehlq.jpg",
           resume:
             "https://drive.google.com/file/d/1la_2SILlCEtfEqzgV0Klq5bXEFdFJ95R/view?usp=sharing",
-          linkedin: "",
-          email: "",
+          linkedin: "https://www.linkedin.com/in/mistry-foram/",
+          email: "tc1guiitar@gsfcuniversity.ac.in",
         },
         {
           id: 2,
@@ -956,7 +956,7 @@ const TeamCarousel = () => {
           resume:
             "https://drive.google.com/file/d/1U1y8UrjXI7msX5wbgbTD2h1VGwlMNaiv/view?usp=sharing",
           linkedin: "",
-          email: "",
+          email: "tc3guiitar@gsfcuniversity.ac.in",
         },
 
         {
@@ -967,8 +967,8 @@ const TeamCarousel = () => {
             "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068618/chandraveer_ikxedq.png",
           resume:
             "https://drive.google.com/file/d/1TGVNe7Q9Z5UFB0K1u2GGTieFTKzSJP1W/view?usp=sharing",
-          linkedin: "",
-          email: "",
+          linkedin: "https://www.linkedin.com/in/chandraveer-solanki/",
+          email: "tc4guiitar@gsfcuniversity.ac.in",
         },
       ],
     },
@@ -987,7 +987,7 @@ const TeamCarousel = () => {
           resume:
             "https://drive.google.com/file/d/1c1xVXPzIx0En0QCoU_jl9U7BFlJka6i7/",
           linkedin: "",
-          email: "",
+          email: "23bt04d179@gsfcuniversity.ac.in",
         },
         {
           id: 2,
@@ -997,8 +997,8 @@ const TeamCarousel = () => {
             "https://res.cloudinary.com/dopcjxehj/image/upload/v1743075961/WhatsApp_Image_2025-03-27_at_17.14.31_67532fc6_vevmxd.jpg",
           resume:
             "https://drive.google.com/file/d/1gWZmptw4iYsGJPDGOeIh1kW4YLclx-qn/",
-          linkedin: "",
-          email: "",
+          linkedin: "https://www.linkedin.com/in/devanshi-mufti-409b4a270/",
+          email: "22bt04071@gsfcuniversity.ac.in",
         },
         {
           id: 3,
@@ -1008,8 +1008,8 @@ const TeamCarousel = () => {
             "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068726/pranjal_tbznpe.png",
           resume:
             "https://drive.google.com/file/d/1sEjdxBqVI069NnBQRD1Hfj7HFbRwCFy7/",
-          linkedin: "",
-          email: "",
+          linkedin: "https://www.linkedin.com/in/pranjal-dave-279b962a1/",
+          email: "23sc04010@gsfcuniversity.ac.in",
         },
         {
           id: 4,
@@ -1019,8 +1019,8 @@ const TeamCarousel = () => {
             "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068625/dhruv_kfxnz7.jpg",
           resume:
             "https://drive.google.com/file/d/11sZw31uVSSP3Qk_zdRk_eNbPombzRoHo/",
-          linkedin: "",
-          email: "",
+          linkedin: "https://www.linkedin.com/in/dhruv-verma-dv/",
+          email: " 23sc06007@gsfcuniversity.ac.in",
         },
         {
           id: 5,
@@ -1030,8 +1030,8 @@ const TeamCarousel = () => {
             "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068634/IshikaPatel_bdyaum.jpg",
           resume:
             "https://drive.google.com/file/d/1prBp-K4o56VK0J3Te7IZXqdQfduUq0ow/view?usp=sharing",
-          linkedin: "",
-          email: "",
+          linkedin: "https://www.linkedin.com/in/ishika-patel-b24047245/",
+          email: "22BBA01082@gsfcuniversity.ac.in",
         },
         {
           id: 6,
@@ -1042,7 +1042,7 @@ const TeamCarousel = () => {
           resume:
             "https://drive.google.com/file/d/1_tYZBdKP6gEpdyR64ypUi4auf0Lv6VJp/",
           linkedin: "",
-          email: "",
+          email: "22bt04071@gsfcuniversity.ac.in",
         },
         {
           id: 7,
@@ -1053,7 +1053,7 @@ const TeamCarousel = () => {
           resume:
             "https://drive.google.com/file/d/1dAnb35BNgZOURjsJaY_QHA4eMwsLj_Ca/",
           linkedin: "",
-          email: "",
+          email: "24bt05044@gsfcuniversity.ac.in",
         },
       ],
     },
