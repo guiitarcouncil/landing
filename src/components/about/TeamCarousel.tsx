@@ -945,7 +945,7 @@ const TeamCarousel = () => {
           resume:
             "https://drive.google.com/file/d/1la_2SILlCEtfEqzgV0Klq5bXEFdFJ95R/view?usp=sharing",
           linkedin: "https://www.linkedin.com/in/mistry-foram/",
-          email: "tc4guiitar@gsfcuniversity.ac.in",
+          email: "",
         },
         {
           id: 2,
@@ -968,7 +968,7 @@ const TeamCarousel = () => {
           resume:
             "https://drive.google.com/file/d/1TGVNe7Q9Z5UFB0K1u2GGTieFTKzSJP1W/view?usp=sharing",
           linkedin: "https://www.linkedin.com/in/chandraveer-solanki/",
-          email: "",
+          email: "tc4guiitar@gsfcuniversity.ac.in",
         },
       ],
     },
