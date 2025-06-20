@@ -125,7 +125,7 @@ const TeamCarousel = () => {
           position: "Assistant Professor",
           image:
             "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068628/drjignesh_kdyj4f.jpg",
-          resume: "",
+          resume: "https://drive.google.com/file/d/1Az-1IsFv-QBiBRxRdD5airdbr8yXoq2F/view?usp=drive_link",
           linkedin: "https://www.linkedin.com/in/dr-jignesh-b-valand-b3686032/",
           email: "jignesh.valand@gsfcuniversity.ac.in",
         },
@@ -155,7 +155,7 @@ const TeamCarousel = () => {
           position: "Assistant Professor",
           image:
             "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068718/MsCharmi_jg7rq3.jpg",
-          resume: "",
+          resume: "https://drive.google.com/file/d/1IV2GIL8i1w8x0eiM5qAkeFNN0UYohowm/view?usp=drive_link",
           linkedin: "https://www.linkedin.com/in/charmi-mehta-9a196b134/",
           email: "charmi.mehta@gsfcuniversity.ac.in",
         },
@@ -456,7 +456,7 @@ const TeamCarousel = () => {
           resume:
             "https://drive.google.com/file/d/1oUzPVx2ZyouUqacRfDDSeRTkqsBJQBIH/view?usp=sharing",
           linkedin: "https://www.linkedin.com/in/sanjukta-bose-goswami/",
-          email: "",
+          email: "dean.sot@gsfcuniversity.ac.in",
         },
         {
           id: 2,
@@ -467,7 +467,7 @@ const TeamCarousel = () => {
           resume:
             "https://drive.google.com/file/d/1A2q3HkyB8UPMfXCWcSFfjG1ob5zg_cuw/view?usp=sharing",
           linkedin: "https://www.linkedin.com/in/bhartitrivedi/",
-          email: "",
+          email: "bhakti.trivedi@gsfcuniversity.ac.in",
         },
         {
           id: 3,
@@ -478,7 +478,7 @@ const TeamCarousel = () => {
           resume:
             "https://drive.google.com/file/d/18SrHuomt-nJXyOCr2BOz1R67WOEq79_G/view?usp=sharing",
           linkedin: "https://www.linkedin.com/in/archana-magare-068a7253/",
-          email: "",
+          email: "archana.margare@gsfcuniversity.ac.in",
         },
         {
           id: 4,
@@ -489,7 +489,7 @@ const TeamCarousel = () => {
           resume:
             "https://drive.google.com/file/d/1118j5nUZCXwib9PAQWEX6-QhY64eu3Ns/view?usp=sharing",
           linkedin: "https://www.linkedin.com/in/mosam-patel-336495a1/",
-          email: "",
+          email: "mosam.patel@gsfcuniversity.ac.in",
         },
         {
           id: 5,
@@ -500,7 +500,7 @@ const TeamCarousel = () => {
           resume:
             "https://drive.google.com/file/d/113w46kL1amfBIjEpStdAj6quOW4KLrnh/view?usp=sharing",
           linkedin: "https://www.linkedin.com/in/dr-akhilesh-prajapati-39b20a21/",
-          email: "",
+          email: "akhilesh.prajapati@gsfcuniversity.ac.in",
         },
         {
           id: 6,
@@ -511,7 +511,7 @@ const TeamCarousel = () => {
           resume:
             "https://drive.google.com/file/d/17lLS0KlbIGr7IQusyJjNAVBFGrDWFkwm/view?usp=sharing",
           linkedin: "https://www.linkedin.com/in/prof-devjani-banerjee-1336b859/",
-          email: "",
+          email: "devjani.banerjee@gsfcuniversity.ac.in",
         },
         {
           id: 7,
@@ -522,7 +522,7 @@ const TeamCarousel = () => {
           resume:
             "https://drive.google.com/file/d/1FwSxe7Wzou8lnaDJ-_tCtX5Ud0f0mA6T/view?usp=sharing",
           linkedin: "https://www.linkedin.com/in/dr-chetna-parmar-118857200/",
-          email: "",
+          email: "chetna.parmar@gsfcuniversity.ac.in",
         },
         {
           id: 8,
@@ -533,7 +533,7 @@ const TeamCarousel = () => {
           resume:
             "https://drive.google.com/file/d/1x0fC1FwVlDKEQnWv0z7OVVk8Itl68_f4/view?usp=sharing",
           linkedin: "https://www.linkedin.com/in/dr-arti-bhadouria-9816a690/",
-          email: "",
+          email: "arti.bhadoria@gsfcuniversity.ac.in",
         },
         {
           id: 9,
@@ -544,7 +544,7 @@ const TeamCarousel = () => {
           resume:
             "https://drive.google.com/file/d/1-3OHEchNo4efjv6bmnDpNFqruRnjSuqK/view?usp=sharing",
           linkedin: "https://www.linkedin.com/in/dr-parin-kanaiya-269819283/",
-          email: "",
+          email: "parin.kanaiya@gsfcuniversity.ac.in",
         },
         {
           id: 10,
@@ -555,7 +555,7 @@ const TeamCarousel = () => {
           resume:
             "https://drive.google.com/file/d/1vBzRUcKz506cpJu0lbzZvK5-EfGo3gZa/view?usp=sharing",
           linkedin: "https://www.linkedin.com/in/swati-saxena-615419166/",
-          email: "",
+          email: "swati.saxena@gsfcuniversity.ac.in",
         },
         {
           id: 11,
@@ -566,7 +566,7 @@ const TeamCarousel = () => {
           resume:
             "https://drive.google.com/file/d/1xHbWbvWJ3q3gKB5k3tLhFnKaIxlKByas/view?usp=sharing",
           linkedin: "https://www.linkedin.com/in/dr-arti-hansda-2ab1a273/",
-          email: "",
+          email: "arti.hansda@gsfcuniversity.ac.in",
         },
       ],
     },
@@ -1041,7 +1041,7 @@ const TeamCarousel = () => {
             "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068731/Vedantratna_cilhhc.jpg",
           resume:
             "https://drive.google.com/file/d/1_tYZBdKP6gEpdyR64ypUi4auf0Lv6VJp/",
-          linkedin: "",
+          linkedin: "https://www.linkedin.com/in/vedant-ratnottar-001726342?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
           email: "22bt04071@gsfcuniversity.ac.in",
         },
         {
