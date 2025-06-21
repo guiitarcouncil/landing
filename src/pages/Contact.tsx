@@ -1,73 +1,85 @@
+"use client"
 
-import { useState } from "react";
-import Navbar from "@/components/layout/Navbar";
-import Footer from "@/components/layout/Footer";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Card, CardContent } from "@/components/ui/card";
-import { useToast } from "@/hooks/use-toast";
-import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import type React from "react"
+
+import { useState } from "react"
+import Navbar from "@/components/layout/Navbar"
+import Footer from "@/components/layout/Footer"
+import { Button } from "@/components/ui/button"
+import { Input } from "@/components/ui/input"
+import { Textarea } from "@/components/ui/textarea"
+import { Card, CardContent } from "@/components/ui/card"
+import { useToast } from "@/hooks/use-toast"
+import { MapPin, Phone, Mail, Clock } from "lucide-react"
+
+interface ContactInfoItem {
+  icon: React.ReactNode
+  title: string
+  contactPerson?: string
+  details: string
+}
 
 const Contact = () => {
-  const { toast } = useToast();
+  const { toast } = useToast()
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     phone: "",
     subject: "",
-    message: ""
-  });
-  const [isSubmitting, setIsSubmitting] = useState(false);
+    message: "",
+  })
+  const [isSubmitting, setIsSubmitting] = useState(false)
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({ ...prev, [name]: value }));
-  };
+    const { name, value } = e.target
+    setFormData((prev) => ({ ...prev, [name]: value }))
+  }
 
   const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    
+    e.preventDefault()
+    setIsSubmitting(true)
+
     // Simulate form submission
     setTimeout(() => {
       toast({
         title: "Message Sent!",
         description: "We've received your message and will respond shortly.",
-      });
+      })
       setFormData({
         name: "",
         email: "",
         phone: "",
         subject: "",
-        message: ""
-      });
-      setIsSubmitting(false);
-    }, 1500);
-  };
+        message: "",
+      })
+      setIsSubmitting(false)
+    }, 1500)
+  }
 
-  const contactInfo = [
+  const contactInfo: ContactInfoItem[] = [
     {
       icon: <MapPin className="h-6 w-6 text-guiitar-primary" />,
       title: "Our Location",
-      details: " Event Room, Second Floor,Anviksha - GSFC University,Vadodara, Gujarat - 391750,India  "
+      details: " Event Room, Second Floor,Anviksha - GSFC University,Vadodara, Gujarat - 391750,India  ",
     },
     {
       icon: <Phone className="h-6 w-6 text-guiitar-primary" />,
+      contactPerson: "Mr Kiran Parmar",
       title: "Phone Number",
-      details: "+91 93132 62712"
+      
+      details: "+91 93132 62712",
     },
     {
       icon: <Mail className="h-6 w-6 text-guiitar-primary" />,
       title: "Email Address",
-      details: " guiitar@gsfcuniversity.ac.in"
+      details: " guiitar@gsfcuniversity.ac.in",
     },
     {
       icon: <Clock className="h-6 w-6 text-guiitar-primary" />,
       title: "Working Hours",
-      details: "Monday - Friday: 9:00 AM - 6:00 PM"
-    }
-  ];
+      details: "Monday - Friday: 9:00 AM - 6:00 PM",
+    },
+  ]
 
   return (
     <div className="pt-20 flex flex-col min-h-screen">
@@ -79,8 +91,8 @@ const Contact = () => {
             <div className="max-w-3xl">
               <h1 className="text-4xl md:text-5xl font-bold mb-6">Contact Us</h1>
               <p className="text-lg md:text-xl opacity-90">
-                Have questions or want to learn more about our incubation programs? 
-                Get in touch with our team and we'll be happy to assist you.
+                Have questions or want to learn more about our incubation programs? Get in touch with our team and we'll
+                be happy to assist you.
               </p>
             </div>
           </div>
@@ -97,7 +109,14 @@ const Contact = () => {
                       {item.icon}
                     </div>
                     <h3 className="text-lg font-semibold mb-2">{item.title}</h3>
-                    <p className="text-gray-600">{item.details}</p>
+                    {item.contactPerson && (
+                      <div className="mb-2">
+                        <p className="text-sm font-medium px-3 py-1  inline-block">
+                          {item.contactPerson}
+                        </p>
+                      </div>
+                    )}
+                    <p className="text-gray-600 whitespace-pre-line">{item.details}</p>
                   </CardContent>
                 </Card>
               ))}
@@ -183,8 +202,8 @@ const Contact = () => {
                       required
                     />
                   </div>
-                  <Button 
-                    type="submit" 
+                  <Button
+                    type="submit"
                     className="bg-guiitar-primary hover:bg-guiitar-primary/90 text-white"
                     disabled={isSubmitting}
                   >
@@ -192,7 +211,7 @@ const Contact = () => {
                   </Button>
                 </form>
               </div>
-              
+
               {/* Map */}
               <div>
                 <h2 className="text-2xl font-bold mb-6">Our Location</h2>
@@ -220,8 +239,8 @@ const Contact = () => {
             <div className="max-w-3xl mx-auto text-center">
               <h2 className="text-3xl font-bold mb-6">Ready to Join Our Incubation Program?</h2>
               <p className="text-gray-600 mb-8">
-                Take the first step towards turning your innovative idea into a successful venture. 
-                Apply to our incubation program today and get access to funding, mentorship, and resources.
+                Take the first step towards turning your innovative idea into a successful venture. Apply to our
+                incubation program today and get access to funding, mentorship, and resources.
               </p>
               <Button size="lg" className="bg-guiitar-accent hover:bg-guiitar-accent/90 text-white">
                 Apply Now
@@ -232,7 +251,7 @@ const Contact = () => {
       </main>
       <Footer />
     </div>
-  );
-};
+  )
+}
 
-export default Contact;
+export default Contact
