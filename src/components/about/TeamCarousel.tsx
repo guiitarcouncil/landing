@@ -1,40 +1,30 @@
-import { useState } from "react";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Button } from "@/components/ui/button";
-import { FileText, Users, ChevronDown } from "lucide-react";
-import { Card, CardContent, CardFooter } from "@/components/ui/card";
-import {
-  Collapsible,
-  CollapsibleContent,
-  CollapsibleTrigger,
-} from "@/components/ui/collapsible";
-import { useIsMobile } from "@/hooks/use-mobile";
-import path from "path";
+"use client"
+
+import { useState } from "react"
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel"
+import { Button } from "@/components/ui/button"
+import { FileText, Users, ChevronDown } from "lucide-react"
+import { Card, CardContent } from "@/components/ui/card"
+import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible"
+import { useIsMobile } from "@/hooks/use-mobile"
 
 // Updated type
 type TeamMember = {
-  id: number;
-  name: string;
-  position: string;
-  image: string;
-  resume?: string;
-  bio?: string;
-  linkedin?: string;
-  email?: string;
-};
+  id: number
+  name: string
+  position: string
+  image: string
+  resume?: string
+  bio?: string
+  linkedin?: string
+  email?: string
+}
 
 type TeamCategory = {
-  id: string;
-  name: string;
-  members: TeamMember[];
-};
+  id: string
+  name: string
+  members: TeamMember[]
+}
 
 const TeamCarousel = () => {
   const isMobile = useIsMobile();
@@ -1059,46 +1049,42 @@ const TeamCarousel = () => {
     },
   ]);
 
-  const activeCategory = teamCategories.find((cat) => cat.id === activeTeam);
+  const activeCategory = teamCategories.find((cat) => cat.id === activeTeam)
 
   const handleCategoryChange = (categoryId: string) => {
-    setActiveTeam(categoryId);
-    setIsOpen(false);
-  };
+    setActiveTeam(categoryId)
+    setIsOpen(false)
+  }
 
   return (
-    <div className="w-full px-4 sm:px-6 lg:px-8">
+    <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      {/* Header Section */}
+      
+
+      {/* Mobile Dropdown */}
       {isMobile ? (
-        <div className="mb-6">
-          <Collapsible
-            open={isOpen}
-            onOpenChange={setIsOpen}
-            className="w-full"
-          >
-            <CollapsibleTrigger className="flex items-center justify-between w-full p-4 bg-guiitar-light rounded-md text-left">
-              <span className="font-semibold text-base sm:text-lg">
-                {activeCategory?.name}
-              </span>
+        <div className="mb-8">
+          <Collapsible open={isOpen} onOpenChange={setIsOpen} className="w-full">
+            <CollapsibleTrigger className="flex items-center justify-between w-full p-4 bg-blue-50 hover:bg-blue-100 rounded-lg text-left border border-blue-200 transition-colors">
+              <span className="font-semibold text-lg text-blue-900">{activeCategory?.name}</span>
               <ChevronDown
-                className={`h-5 w-5 transition-transform ${
-                  isOpen ? "rotate-180" : ""
-                }`}
+                className={`h-5 w-5 text-blue-600 transition-transform duration-200 ${isOpen ? "rotate-180" : ""}`}
               />
             </CollapsibleTrigger>
-            <CollapsibleContent className="bg-white rounded-md shadow-md mt-2">
-              {teamCategories.map((category) => (
+            <CollapsibleContent className="bg-white rounded-lg shadow-lg mt-2 border border-gray-200 overflow-hidden">
+              {teamCategories.map((category, index) => (
                 <button
                   key={category.id}
                   onClick={() => handleCategoryChange(category.id)}
-                  className={`w-full text-left px-4 py-3 text-sm sm:text-base ${
+                  className={`w-full text-left px-4 py-4 text-base transition-colors ${
                     category.id === activeTeam
-                      ? "bg-guiitar-light text-guiitar-primary"
-                      : "hover:bg-gray-100"
-                  }`}
+                      ? "bg-blue-50 text-blue-700 border-l-4 border-blue-500"
+                      : "hover:bg-gray-50 text-gray-700"
+                  } ${index !== teamCategories.length - 1 ? "border-b border-gray-100" : ""}`}
                 >
                   <div className="flex items-center">
-                    <Users className="mr-2 h-4 w-4" />
-                    {category.name}
+                    <Users className="mr-3 h-5 w-5" />
+                    <span className="font-medium">{category.name}</span>
                   </div>
                 </button>
               ))}
@@ -1106,132 +1092,113 @@ const TeamCarousel = () => {
           </Collapsible>
         </div>
       ) : (
-        <Tabs
-          defaultValue="team"
-          value={activeTeam}
-          onValueChange={setActiveTeam}
-          className="w-full"
-        >
-          <TabsList className="flex flex-wrap w-full gap-2 mb-6 justify-center">
+        /* Desktop Tabs */
+        <div className="mb-8">
+          <div className="flex flex-wrap justify-center gap-2 p-2 bg-gray-100 rounded-lg">
             {teamCategories.map((category) => (
-              <TabsTrigger
+              <button
                 key={category.id}
-                value={category.id}
-                className="flex items-center px-3 py-2 text-sm sm:text-base"
+                onClick={() => setActiveTeam(category.id)}
+                className={`flex items-center px-4 py-3 rounded-md text-sm font-medium transition-all duration-200 ${
+                  category.id === activeTeam
+                    ? "bg-blue-600 text-white shadow-md"
+                    : "bg-white text-gray-700 hover:bg-blue-50 hover:text-blue-600"
+                }`}
               >
-                <Users className="mr-2 h-4 w-6" />
+                <Users className="mr-2 h-4 w-4" />
                 {category.name}
-              </TabsTrigger>
+              </button>
             ))}
-          </TabsList>
-        </Tabs>
+          </div>
+        </div>
       )}
 
+      {/* Team Members Display */}
       {activeCategory && (
-        <div className="py-4">
-          <h3 className="text-xl sm:text-2xl font-semibold mb-6 text-center">
-            {activeCategory.name}
-          </h3>
+        <div className="py-8">
+          <h3 className="text-3xl font-bold mb-12 text-center text-gray-900">{activeCategory.name}</h3>
 
-          <Carousel opts={{ align: "center", loop: false }} className="w-full">
-            <CarouselContent className="-ml-2 sm:-ml-3">
-              {activeCategory.members.map((member) => (
-                <CarouselItem
-                  key={member.id}
-                  className="pl-2 sm:pl-3 basis-full sm:basis-1/2 md:basis-1/3 lg:basis-1/4"
-                >
-                  <Card className="h-full hover:shadow-lg transition-shadow rounded-lg">
-                    <div className="flex justify-center pt-6 pb-4">
-                      <div className="relative group">
-                        <img
-                          src={member.image}
-                          alt={member.name}
-                          className="w-24 h-24 sm:w-28 sm:h-28 rounded-full object-cover border-4 border-white shadow-md filter grayscale group-hover:grayscale-0 transition-all duration-300"
-                        />
-                      </div>
+          <Carousel
+            opts={{
+              align: "start",
+              loop: false,
+            }}
+            className="w-full"
+          >
+            <CarouselContent className="-ml-4">
+              {activeCategory.members.map((member, index) => (
+                <CarouselItem key={member.id} className="pl-4 basis-full sm:basis-1/2 lg:basis-1/3 xl:basis-1/4">
+                  <Card className="h-full bg-white border border-gray-200 shadow-sm hover:shadow-md transition-shadow duration-200 rounded-lg">
+                    {/* Profile Image */}
+                    <div className="flex justify-center pt-8 pb-6">
+                      <img
+                        src={member.image || "/placeholder.svg"}
+                        alt={member.name}
+                        className="w-24 h-24 rounded-full object-cover grayscale hover:grayscale-0 transition-all duration-300 cursor-pointer"
+                      />
                     </div>
-                    <CardContent className="text-center px-4">
-                      <h4 className="font-semibold text-base sm:text-lg mb-1">
-                        {member.name}
-                      </h4>
-                      <p className="text-gray-600 text-sm mb-2">
-                        {member.position}
-                      </p>
-                      {member.bio && (
-                        <p className="text-gray-700 text-xs mb-4 line-clamp-3">
-                          {member.bio}
-                        </p>
-                      )}
-                      <div className="flex justify-center gap-4 items-center">
+
+                    {/* Member Info */}
+                    <CardContent className="text-center px-6 pb-6">
+                      <h4 className="font-bold text-lg mb-2 text-gray-900">{member.name}</h4>
+                      <p className="text-gray-600 text-sm mb-6">{member.position}</p>
+
+                      {/* Social Icons */}
+                      <div className="flex justify-center gap-4 mb-6">
                         {member.linkedin && (
                           <a
                             href={member.linkedin}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-blue-600 hover:text-blue-800"
+                            className="text-blue-600 hover:text-blue-800 text-lg font-extrabold transition-colors"
                           >
-                            <svg
-                              className="h-5 w-5"
-                              fill="currentColor"
-                              viewBox="0 0 24 24"
-                            >
-                              <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
-                            </svg>
+                            in
                           </a>
                         )}
                         {member.email && (
                           <button
-                            onClick={() => handleEmailClick(member.email)}
-                            className="text-gray-400 hover:text-guiitar-primary relative"
+                            onClick={() => handleEmailClick(member.email!)}
+                            className="text-gray-400  hover:text-gray-600 text-lg transition-colors relative"
                           >
-                            <svg
-                              className="h-5 w-5"
-                              fill="currentColor"
-                              viewBox="0 0 22 22"
-                            >
-                              <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
-                            </svg>
+                            ✉
                             {copiedEmail === member.email && (
-                              <span className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded">
+                              <span className="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded whitespace-nowrap">
                                 Copied!
                               </span>
                             )}
                           </button>
                         )}
                       </div>
-                    </CardContent>
-                    {member.resume && (
-                      <CardFooter className="justify-center pt-2 pb-4">
+
+                      {/* Resume Button */}
+                      {member.resume && (
                         <Button
                           variant="outline"
-                          className="w-full text-xs"
+                          className="w-full text-sm font-medium bg-gray-100 hover:bg-orange-500 text-gray-700 hover:text-black border-gray-300 hover:border-orange-500 transition-all duration-200"
                           asChild
                         >
-                          <a
-                            href={member.resume}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            <FileText className="mr-2 h-3 w-3" />
+                          <a href={member.resume} target="_blank" rel="noopener noreferrer">
+                            <FileText className="mr-2 h-4 w-4" />
                             View Resume
                           </a>
                         </Button>
-                      </CardFooter>
-                    )}
+                      )}
+                    </CardContent>
                   </Card>
                 </CarouselItem>
               ))}
             </CarouselContent>
 
-            <div className="flex justify-center mt-6 gap-4">
-              <CarouselPrevious className="static" />
-              <CarouselNext className="static" />
+            {/* Carousel Navigation */}
+            <div className="flex justify-center mt-8 gap-4">
+              <CarouselPrevious className="static translate-y-0 bg-white hover:bg-orange-500 text-gray-600 hover:text-white border-gray-300 hover:border-orange-500 rounded-full w-10 h-10 transition-all duration-200" />
+              <CarouselNext className="static translate-y-0 bg-white hover:bg-orange-500 text-gray-600 hover:text-white border-gray-300 hover:border-orange-500 rounded-full w-10 h-10 transition-all duration-200" />
             </div>
           </Carousel>
         </div>
       )}
     </div>
-  );
-};
+  )
+}
 
-export default TeamCarousel;
+export default TeamCarousel

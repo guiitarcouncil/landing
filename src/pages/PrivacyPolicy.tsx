@@ -90,11 +90,11 @@ const PrivacyPolicy = () => {
                   </p>
                   <div className="bg-gray-50 p-6 rounded-lg">
                     <h3 className="text-lg font-semibold mb-2">GUIITAR COUNCIL</h3>
-                    <p>GSFC University Campus, Vigyan Bhavan</p>
-                    <p>P.O. Fertilizernagar</p>
-                    <p>Vadodara, Gujarat 391750</p>
-                    <p className="mt-2">Email: privacy@guiitarcouncil.org</p>
-                    <p>Phone: +91-265-2225XXX</p>
+                    <p>Event Room, Second Floor,Anviksha-</p>
+                    <p>GSFC University,Vadodara,</p>
+                    <p>Gujarat - 391750, India</p>
+                    <p className="mt-2">guiitar@gsfcuniversity.ac.in</p>
+                    <p>Phone:+91 93132 62712</p>
                   </div>
                 </div>
               </div>

@@ -193,7 +193,7 @@ const Associations = () => {
           >
             <div className="absolute group cursor-pointer" style={{ top: 0, left: 0 }}>
               <div className="w-16 h-16 md:w-20 md:h-20 rounded-full overflow-hidden shadow-lg border-4 border-white hover:scale-110 hover:shadow-xl transition-all duration-300">
-                <img src={assoc.image} alt={assoc.name} className="w-16 h-16 object-contain rounded-full shadow" />
+                <img src={assoc.image} alt={assoc.name} className="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 object-contain rounded-full" />
               </div>
               <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
                 <div className="bg-gray-800 text-white text-xs px-2 py-1 rounded whitespace-nowrap">
