@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom'; // Added import for Link
 import Navbar from '@/components/layout/Navbar';
 
 function Programs() {
@@ -169,8 +170,8 @@ function Programs() {
               </div>
 
               <div className="text-center">
-                <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-lg font-semibold">
-                  Explore All Funding Options
+                <Button variant="outline" className=" bg-guiitar-primary  hover:bg-guiitar-accent/90 text-white text-sm xl:text-base px-3 xl:px-4">
+                  <Link to="/funding" className='text-white'>Explore All Funding Options</Link>
                 </Button>
               </div>
             </div>
