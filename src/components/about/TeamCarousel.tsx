@@ -961,13 +961,13 @@ const TeamCarousel = () => {
             <CarouselContent className="-ml-4">
               {activeCategory.members.map((member, index) => (
                 <CarouselItem key={member.id} className="pl-4 basis-full sm:basis-1/2 lg:basis-1/3 xl:basis-1/4">
-                  <Card className="h-[360px] bg-white border border-gray-200 shadow-sm hover:shadow-md transition-shadow duration-200 rounded-lg flex flex-col">
+                  <Card className="group h-[360px] bg-white border border-gray-200 shadow-sm hover:shadow-md transition-shadow duration-200 rounded-lg flex flex-col">
                     {/* Profile Image */}
                     <div className="flex justify-center pt-8 pb-6">
                       <img
                         src={member.image || "/placeholder.svg"}
                         alt={member.name}
-                        className="w-24 h-24 rounded-full object-cover grayscale hover:grayscale-0 transition-all duration-300 cursor-pointer"
+                        className="w-24 h-24 rounded-full object-cover grayscale group-hover:grayscale-0 hover:grayscale-0 transition-all duration-300 cursor-pointer"
                       />
                     </div>
 

@@ -110,7 +110,10 @@ const Footer = () => {
               <li className="flex items-start">
                 <FontAwesomeIcon icon={faMapMarkerAlt} className="text-guiitar-accent mr-3 mt-1" />
                 <span className="text-gray-300">
-                 Event Room, Second Floor,Anviksha - GSFC University,Vadodara, Gujarat - 391750,India
+                <p> Event Room, Second Floor,</p>
+                 Anviksha - GSFC University,
+                 <p>Vadodara, Gujarat - 391750</p>
+                 <p>India</p>
                 </span>
               </li>
               <li className="flex items-center">
