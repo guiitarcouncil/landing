@@ -117,9 +117,12 @@ const TermsConditions = () => {
                   </p>
                   <div className="bg-gray-50 p-6 rounded-lg">
                     <h3 className="text-lg font-semibold mb-2">GUIITAR COUNCIL</h3>
-                    <p>Event Room, Second Floor,Anviksha -</p>
-                    <p>GSFC University,Vadodara, Gujarat -</p>
-                    <p>391750,India</p>
+                   
+                   <p> Event Room, Second Floor,</p>
+                   <p>  Anviksha - GSFC University,</p>
+                   <p>Vadodara, Gujarat - 391750</p>
+                  <p>India</p>
+               
                     <p className="mt-2">Email: guiitar@gsfcuniversity.ac.in</p>
                     <p>Phone: +91 93132 62712</p>
                   </div>
