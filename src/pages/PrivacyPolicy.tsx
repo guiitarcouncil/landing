@@ -92,7 +92,7 @@ const PrivacyPolicy = () => {
                     <h3 className="text-lg font-semibold mb-2">GUIITAR COUNCIL</h3>
                     <p>Event Room, Second Floor,</p>
                     <p>Anviksha-GSFC University,</p>
-                    <p>Vadodara,Gujarat - 391750</p>
+                    <p>Vadodara, Gujarat - 391750</p>
                     <p> India</p>
                     <p className="mt-2">guiitar@gsfcuniversity.ac.in</p>
                     <p>Phone:+91 93132 62712</p>
