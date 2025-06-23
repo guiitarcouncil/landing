@@ -35,7 +35,7 @@ const StudentProjects = () => {
       grant: "₹2,50,000",
       mentor: "Prof. Devjani Banerjee",
       usp: "Ayurtrix is working to increase the production of authentic Ayurvedic products to meet the growing demand and provide consumers with products that have the desired health benefits.",
-      projectLink: "/",
+      projectLink: "*",
       teamMembers: [
         {
           name: "Mr. Dev Shitole",
@@ -122,7 +122,7 @@ const StudentProjects = () => {
       grant: "₹1,84,800",
       mentor: "Mr. Yatharth Bhatt, Lab Assistant, SOT, GSFCU",
       usp: "Durable, Multi-terrain robot with advanced cameras and professional-grade design for unmatched reliability in critical operations and surveillance missions.",
-      projectLink: "/",
+      projectLink: "*",
       teamMembers: [
         {
           name: "Aksha Vohra",
@@ -164,7 +164,7 @@ const StudentProjects = () => {
       grant: "₹88,000",
       mentor: "Dr. Deepak Parashar, Associate Professor (CSE)",
       usp: "ALOU is designed to be a source of genuine comfort and companionship. The robot teddy bear serves as an emotional support system, providing tactile, conversational, and emotional engagement.",
-      projectLink: "/",
+      projectLink: "*",
       teamMembers: [
         {
           name: "Mr. Madhav Trivedi",
@@ -183,7 +183,7 @@ const StudentProjects = () => {
     },
     {
       id: 7,
-      name: "Noise Monitoring System",
+      name: "Noise Monitoring System",//file trash
       grant: "₹1,19,000",
       mentor: "Ms. Swati Saxena, Assistant Professor, CSE",
       usp: "Low-cost Noise Monitoring System for the Atrium at Anviksha building to reduce noise disruption in nearby classrooms and offices, creating a conducive learning environment.",
@@ -211,14 +211,14 @@ const StudentProjects = () => {
       projectLink: "https://drive.google.com/file/d/1P3nehuLGC2JkAclkOYGnNV9lJ0T_navK/view?usp=sharing",
       teamMembers: [
         {
-          name: "Mr. Aryan Vamja",
-          photo:
-            "https://res.cloudinary.com/dopcjxehj/image/upload/v1743657463/IMG-20250324-WA0056-removebg-preview-01_1_ds0sbo.jpg",
+          name: "Ms. Chahana Kamdar",
+          photo: "https://res.cloudinary.com/dopcjxehj/image/upload/v1743142784/chahana_rcc5vz.jpg",
           role: "Team Lead",
         },
         {
-          name: "Ms. Chahana Kamdar",
-          photo: "https://res.cloudinary.com/dopcjxehj/image/upload/v1743142784/chahana_rcc5vz.jpg",
+          name: "Mr. Aryan Vamja",
+          photo:
+            "https://res.cloudinary.com/dopcjxehj/image/upload/v1743657463/IMG-20250324-WA0056-removebg-preview-01_1_ds0sbo.jpg",
         },
         {
           name: "Mr. Deepkumar Gadhethariya",
@@ -247,7 +247,7 @@ const StudentProjects = () => {
       grant: "₹1,58,000",
       mentor: "Mr. Yatharth Bhatt, Lab Assistant, SOT, GSFCU",
       usp: "A versatile solution for sustainable unmanned surface vehicle. Innovative technology redefines maritime operations with multifunctional capabilities, from surveillance and monitoring to research and rescue missions.",
-      projectLink: "https://drive.google.com/file/d/19Cr-ozJPr01xM4grE6Zm6R4wP9tFRB04",
+      projectLink: "https://drive.google.com/file/d/19Cr-ozJPr01xM4grE6Zm6R4wP9tFRB04/view?usp=sharing",
       teamMembers: [
         {
           name: "Mr. Atharva Sisodiya",
@@ -320,7 +320,7 @@ const StudentProjects = () => {
       grant: "₹2,50,000",
       mentor: "Ms. Zalak Kansagra, Assistant Professor, CSE",
       usp: "Revolutionary smart glass technology providing real-time virtual assistance with advanced AR capabilities for enhanced user experience and productivity.",
-      projectLink: "/",
+      projectLink: "*",
       teamMembers: [
         {
           name: "Mr. Viraj Patel",
@@ -348,20 +348,19 @@ const StudentProjects = () => {
     }
 
     return (
-      <div className={`grid gap-2 ${getGridClass(visibleMembers.length)}`}>
+      <div className={`grid gap-3 ${getGridClass(visibleMembers.length)}`}>
         {visibleMembers.map((member, index) => (
           <div key={index} className="flex flex-col items-center">
-            <Avatar className="h-12 w-12 border-2 border-blue-600">
+            <Avatar className="h-20 w-20 border-2 border-blue-600">
               <AvatarImage src={member.photo || "/placeholder.svg"} alt={member.name} />
               <AvatarFallback>{member.name.substring(0, 2).toUpperCase()}</AvatarFallback>
             </Avatar>
-            <span className="text-xs mt-1 text-center font-medium">{member.name.split(" ").slice(-1)[0]}</span>
-            {member.role && <span className="text-xs text-blue-600 font-semibold">{member.role}</span>}
+            <span className="text-xs mt-1 text-center font-medium leading-tight">{member.name}</span>
           </div>
         ))}
         {remainingCount > 0 && (
           <div className="flex flex-col items-center">
-            <div className="h-12 w-12 border-2 border-blue-600 rounded-full bg-gray-100 flex items-center justify-center">
+            <div className="h-16 w-16 border-2 border-blue-600 rounded-full bg-gray-100 flex items-center justify-center">
               <span className="text-xs font-semibold text-gray-600">+{remainingCount}</span>
             </div>
             <span className="text-xs mt-1 text-center text-gray-500">more</span>
@@ -387,7 +386,7 @@ const StudentProjects = () => {
           <Carousel
             opts={{
               align: "start",
-              loop: true,
+              loop: false,
             }}
             className="w-full"
           >
@@ -422,8 +421,14 @@ const StudentProjects = () => {
                     </CardContent>
                     <CardFooter className="border-t pt-4 mt-auto">
                       <Button
-                        className="w-full bg-blue-600 hover:bg-blue-700 text-white"
-                        onClick={() => window.open(project.projectLink, "_blank")}
+                        className="w-full bg-guiitar-primary text-white"
+                        onClick={() => {
+                          if (project.projectLink && project.projectLink !== "/") {
+                            window.open(project.projectLink, "_blank")
+                          } else {
+                            alert("Project link not available")
+                          }
+                        }}
                       >
                         View Project <ExternalLink size={16} className="ml-2" />
                       </Button>
@@ -439,7 +444,7 @@ const StudentProjects = () => {
           </Carousel>
 
           <div className="text-center mt-10">
-            <Button className="bg-blue-800 hover:bg-blue-900 text-white px-8 py-3">
+            <Button className=" bg-guiitar-primary hover:bg-blue-900 text-white px-8 py-3">
               View All Projects <ExternalLink size={16} className="ml-2" />
             </Button>
           </div>
