@@ -14,6 +14,7 @@ import {
   faPhone,
   faSignInAlt
 } from '@fortawesome/free-solid-svg-icons';
+import {FileText } from 'lucide-react';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -28,6 +29,7 @@ const Navbar = () => {
     { title: 'Workshops & Events', path: '/events', icon: <FontAwesomeIcon icon={faCalendarAlt} className="text-base" /> },
     { title: 'Careers', path: '/careers', icon: <FontAwesomeIcon icon={faBriefcase} className="text-base" /> },
     { title: 'Contact', path: '/contact', icon: <FontAwesomeIcon icon={faPhone} className="text-base" /> },
+    { title: 'Resources', path: '/resources', icon: <FileText className="text-base" /> },
   ];
 
   return (
@@ -41,6 +43,7 @@ const Navbar = () => {
               alt="Logo"
               className="h-8 sm:h-12 w-auto"
             />
+            
           </Link>
 
           {/* Desktop Navigation */}

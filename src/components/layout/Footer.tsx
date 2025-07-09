@@ -10,11 +10,13 @@ import {
   faChevronRight
 } from '@fortawesome/free-solid-svg-icons';
 import {
-  faFacebookF,
-  faTwitter,
+  faLinkedin,
+  faWhatsapp,
+  faFacebook,
   faInstagram,
-  faLinkedinIn
-} from '@fortawesome/free-brands-svg-icons';
+  faTwitter,
+  faYoutube,
+} from "@fortawesome/free-brands-svg-icons";
 
 
 
@@ -39,17 +41,23 @@ const Footer = () => {
               entrepreneurship, and technological advancement in Vadodara.
             </p>
             <div className="flex space-x-4">
-              <a href="https://facebook.com" aria-label="Facebook" className="text-gray-300 hover:text-guiitar-accent transition-colors">
-                <FontAwesomeIcon icon={faFacebookF} />
+              <a href="https://www.facebook.com/gsfcuniversity" aria-label="Facebook" className="text-gray-300 hover:text-guiitar-accent transition-colors">
+                <FontAwesomeIcon icon={faFacebook} />
               </a>
-              <a href="https://twitter.com" aria-label="Twitter" className="text-gray-300 hover:text-guiitar-accent transition-colors">
+              <a href="https://x.com/GSFCUniversity" aria-label="Twitter" className="text-gray-300 hover:text-guiitar-accent transition-colors">
                 <FontAwesomeIcon icon={faTwitter} />
               </a>
-              <a href="https://instagram.com" aria-label="Instagram" className="text-gray-300 hover:text-guiitar-accent transition-colors">
+              <a href="https://www.instagram.com/gsfcuniversity" aria-label="Instagram" className="text-gray-300 hover:text-guiitar-accent transition-colors">
                 <FontAwesomeIcon icon={faInstagram} />
               </a>
-              <a href="https://linkedin.com" aria-label="LinkedIn" className="text-gray-300 hover:text-guiitar-accent transition-colors">
-                <FontAwesomeIcon icon={faLinkedinIn} />
+              <a href="https://www.linkedin.com/company/guiitarcouncil/" aria-label="LinkedIn" className="text-gray-300 hover:text-guiitar-accent transition-colors">
+                <FontAwesomeIcon icon={faLinkedin} />
+              </a>
+              <a href="https://www.youtube.com/c/GSFCUniversityOfficial" aria-label="Youtube" className="text-gray-300 hover:text-guiitar-accent transition-colors">
+                <FontAwesomeIcon icon={faYoutube} />
+              </a>
+              <a href="https://api.whatsapp.com/send?phone=919313262712" aria-label="whatsapp " className="text-gray-300 hover:text-guiitar-accent transition-colors">
+                <FontAwesomeIcon icon={faWhatsapp} />
               </a>
 
             </div>
