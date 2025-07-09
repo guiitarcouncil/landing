@@ -15,7 +15,7 @@ import Careers from "./pages/Careers"
 import NotFound from "./pages/NotFound"
 import PrivacyPolicy from "./pages/PrivacyPolicy"
 import TermsConditions from "./pages/TermsConditions"
-import Resources  from "./pages/resources"
+import Resources  from "./pages/Resource"
 // import Resources from "./pages/Resources" // ✅ Fixed import
 
 const queryClient = new QueryClient({
