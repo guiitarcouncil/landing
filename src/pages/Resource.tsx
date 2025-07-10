@@ -417,7 +417,7 @@ export default function Resources() {
                 </Badge>
               </div>
               <ChevronRight className="w-5 h-5 text-gray-400" />
-              <span className="text-gray-900 font-semibold text-lg">{currentResource.title}</span>
+              <span className="text-gray-900 font-semibold text-lg">{currentResource.category}</span>
             </div>
           </div>
 
@@ -432,7 +432,7 @@ export default function Resources() {
                       <Badge className="bg-guiitar-primary text-white px-3 py-1">{currentResource.category}</Badge>
                     </div>
                   </div>
-                  <CardTitle className="text-3xl font-bold mb-3 text-gray-900">{currentResource.title}</CardTitle>
+                  <CardTitle className="text-3xl font-bold mb-3 text-gray-900">{currentResource.category}</CardTitle>
                   <CardDescription className="text-lg text-gray-600 leading-relaxed">
                     {currentResource.description}
                   </CardDescription>
@@ -655,7 +655,7 @@ export default function Resources() {
                     <div className="flex flex-wrap gap-2">
                       {resource.tags.slice(0, 3).map((tag) => (
                         <Badge key={tag} variant="outline" className="text-xs px-2 py-1 text-gray-600 border-gray-300">
-                          <Tag className="w-3 h-3 mr-1" />
+                          <Tag className="w-3 h-3 mr-1 " />
                           {tag}
                         </Badge>
                       ))}
@@ -667,7 +667,7 @@ export default function Resources() {
                     </div>
                     {/* Meta info */}
                     <div className="flex items-center justify-between text-sm text-gray-500">
-                      <div className="flex items-center gap-1">
+                      <div className="flex items-center  gap-1">
                         <User className="w-4 h-4" />
                         <span>Last updated</span>
                       </div>
