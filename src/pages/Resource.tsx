@@ -14,9 +14,9 @@ import Footer from "@/components/layout/Footer"
 const resources = [
   {
     id: 1,
-    title: "SSIP 2.0 Guidelines",
+    title: "",
     description: "Comprehensive guidelines for Student Startup and Innovation Policy 2.0 implementation",
-    category: "Guidelines",
+    category: "SSIP 2.0 Guidelines",
     type: "document",
     uploadDate: "2025-06-17",
     uploadedBy: "GUIITAR Council",
@@ -28,9 +28,9 @@ const resources = [
   },
   {
     id: 2,
-    title: "Nodal Institute Guidelines",
+    title: "",
     description: "Official guidelines for nodal institutes under GUIITAR Council framework",
-    category: "Guidelines",
+    category: "Nodal Institute Guidelines",
     type: "document",
     uploadDate: "2024-09-26",
     uploadedBy: "GUIITAR Council",
@@ -42,9 +42,9 @@ const resources = [
   },
   {
     id: 3,
-    title: "IPR Guidelines",
+    title: "",
     description: "Intellectual Property Rights guidelines for startups and innovators",
-    category: "Guidelines",
+    category: "IPR Guidelines",
     type: "document",
     uploadDate: "2024-09-26",
     uploadedBy: "GUIITAR Council",
@@ -56,9 +56,9 @@ const resources = [
   },
   {
     id: 4,
-    title: "GUIITAR Council Policy",
+    title: "",
     description: "Official policies and procedures of GUIITAR Council operations",
-    category: "Policies",
+    category: "GUIITAR Council Policy",
     type: "document",
     uploadDate: "2024-09-26",
     uploadedBy: "GUIITAR Council",
@@ -70,10 +70,10 @@ const resources = [
   },
   {
     id: 5,
-    title: "TRL, MRL, IRL Framework",
+    title: "",
     description:
       "Technology Readiness Level, Manufacturing Readiness Level, and Innovation Readiness Level assessment framework",
-    category: "Assessment Tools",
+    category: "TRL, MRL, IRL Framework",
     type: "document",
     uploadDate: "2024-09-26",
     uploadedBy: "GUIITAR Council",
@@ -85,9 +85,9 @@ const resources = [
   },
   {
     id: 6,
-    title: "Finance for Non-Finance",
+    title: "",
     description: "Financial literacy and management guide for non-finance professionals and entrepreneurs",
-    category: "Training Materials",
+    category: "Finance for Non-Finance",
     type: "document",
     uploadDate: "2024-09-26",
     uploadedBy: "GUIITAR Council",
@@ -99,9 +99,9 @@ const resources = [
   },
   {
     id: 7,
-    title: "Maker Lab Manuals",
+    title: "",
     description: "Complete manuals and guides for operating and utilizing maker lab facilities",
-    category: "Training Materials",
+    category: "Maker Lab Manuals",
     type: "document",
     uploadDate: "2024-09-26",
     uploadedBy: "GUIITAR Council",
@@ -113,9 +113,9 @@ const resources = [
   },
   {
     id: 8,
-    title: "Training Webinar Videos",
+    title: "",
     description: "Collection of recorded training webinars on entrepreneurship and innovation",
-    category: "Videos",
+    category: "Training Webinar Videos",
     type: "video",
     uploadDate: "2024-11-07",
     uploadedBy: "GUIITAR Council",
@@ -127,9 +127,9 @@ const resources = [
   },
   {
     id: 9,
-    title: "Problem Statements",
+    title: "",
     description: "Curated problem statements for innovation challenges and startup opportunities",
-    category: "Resource",
+    category: "Problem Statements",
     type: "document",
     uploadDate: "2024-12-10",
     uploadedBy: "GUIITAR Council",
@@ -141,9 +141,9 @@ const resources = [
   },
   {
     id: 10,
-    title: "DPR for Students",
+    title: "",
     description: "Detailed Project Report template and guidelines specifically designed for student projects",
-    category: "Templates",
+    category: "DPR for Students",
     type: "document",
     uploadDate: "2024-09-26",
     uploadedBy: "GUIITAR Council",
@@ -155,9 +155,9 @@ const resources = [
   },
   {
     id: 11,
-    title: "GUIITAR Council Policies",
+    title: "",
     description: "Comprehensive collection of all GUIITAR Council policies and governance documents",
-    category: "Policies",
+    category: "GUIITAR Council Policies",
     type: "document",
     uploadDate: "2024-12-10",
     uploadedBy: "GUIITAR Council",
@@ -169,9 +169,9 @@ const resources = [
   },
   {
     id: 12,
-    title: "Design Thinking",
+    title: "",
     description: "Comprehensive guide to design thinking methodology for innovation and problem-solving",
-    category: "Training Materials",
+    category: "Design Thinking",
     type: "document",
     uploadDate: "2024-09-26",
     uploadedBy: "GUIITAR Council",
@@ -183,9 +183,9 @@ const resources = [
   },
   {
     id: 13,
-    title: "Business Model",
+    title: "",
     description: "Guide to developing and validating business models for startups and enterprises",
-    category: "Templates",
+    category: "Business Model",
     type: "document",
     uploadDate: "2024-12-10",
     uploadedBy: "GUIITAR Council",
@@ -197,9 +197,9 @@ const resources = [
   },
   {
     id: 14,
-    title: "Founder Starter Pack",
+    title: "",
     description: "Essential resources and tools for aspiring entrepreneurs and startup founders",
-    category: "Resource",
+    category: "Founder Starter Pack",
     type: "document",
     uploadDate: "2024-09-26",
     uploadedBy: "GUIITAR Council",
@@ -211,9 +211,9 @@ const resources = [
   },
   {
     id: 15,
-    title: "GUESSS India Report on Who Want to be an Entrepreneur",
+    title: "",
     description: "Research report on entrepreneurial intentions and attitudes among Indian students",
-    category: "Reports",
+    category: "GUESSS India Report on Who Want to be an Entrepreneur",
     type: "document",
     uploadDate: "2024-11-01",
     uploadedBy: "GUIITAR Council",
@@ -225,9 +225,9 @@ const resources = [
   },
   {
     id: 16,
-    title: "Coffee Table Book",
+    title: "",
     description: "Visual showcase of GUIITAR Council's initiatives, success stories, and impact",
-    category: "Publications",
+    category: "Coffee Table Book",
     type: "document",
     uploadDate: "2024-12-10",
     uploadedBy: "GUIITAR Council",
@@ -239,9 +239,9 @@ const resources = [
   },
   {
     id: 17,
-    title: "ATL Implementation Guide",
+    title: "",
     description: "Comprehensive guide for implementing Atal Tinkering Lab programs and activities",
-    category: "Guidelines",
+    category: "ATL Implementation Guide",
     type: "document",
     uploadDate: "2025-02-01",
     uploadedBy: "GUIITAR Council",
@@ -253,9 +253,9 @@ const resources = [
   },
   {
     id: 18,
-    title: "IPFC Documentation",
+    title: "",
     description: "Innovation and Product Development Facilitation Center documentation and procedures",
-    category: "Guidelines",
+    category: "IPFC Documentation",
     type: "document",
     uploadDate: "2024-12-30",
     uploadedBy: "GUIITAR Council",
@@ -280,6 +280,25 @@ const categories = [
   "Assessment Tools",
 ]
 
+// Category mapping for filtering
+const categoryMapping = {
+  Guidelines: [
+    "SSIP 2.0 Guidelines",
+    "ATL Implementation Guide",
+    "IPFC Documentation",
+    "Nodal Institute Guidelines",
+    "IPR Guidelines",
+  ],
+  Policies: ["GUIITAR Council Policies", "GUIITAR Council Policy"],
+  Resource: ["Problem Statements", "Founder Starter Pack"],
+  "Training Materials": ["Finance for Non-Finance", "Training Webinar Videos", "Design Thinking"],
+  Templates: ["DPR for Students", "Business Model"],
+  Videos: ["Training Webinar Videos"],
+  Reports: ["GUESSS India Report on Who Want to be an Entrepreneur"],
+  Publications: ["Coffee Table Book"],
+  "Assessment Tools": ["TRL, MRL, IRL Framework", "Maker Lab Manuals"],
+}
+
 export default function Resources() {
   const { slug } = useParams<{ slug?: string }>()
   const navigate = useNavigate()
@@ -291,15 +310,32 @@ export default function Resources() {
   const isDetailView = !!slug
   const currentResource = isDetailView ? resources.find((r) => r.slug === slug) : null
 
+  // Enhanced filter function with category mapping
+  const getFilteredResources = () => {
+    return resources.filter((resource) => {
+      const matchesSearch =
+        resource.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        resource.description.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        resource.tags.some((tag) => tag.toLowerCase().includes(searchTerm.toLowerCase()))
+
+      let matchesCategory = false
+
+      if (selectedCategory === "All") {
+        matchesCategory = true
+      } else if (categoryMapping[selectedCategory as keyof typeof categoryMapping]) {
+        // Check if resource category is in the mapped categories
+        matchesCategory = categoryMapping[selectedCategory as keyof typeof categoryMapping].includes(resource.category)
+      } else {
+        // For other categories, use exact match
+        matchesCategory = resource.category === selectedCategory
+      }
+
+      return matchesSearch && matchesCategory
+    })
+  }
+
   // Filter resources for list view
-  const filteredResources = resources.filter((resource) => {
-    const matchesSearch =
-      resource.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      resource.description.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      resource.tags.some((tag) => tag.toLowerCase().includes(searchTerm.toLowerCase()))
-    const matchesCategory = selectedCategory === "All" || resource.category === selectedCategory
-    return matchesSearch && matchesCategory
-  })
+  const filteredResources = getFilteredResources()
 
   // Sort resources
   const sortedResources = [...filteredResources].sort((a, b) => {
@@ -381,9 +417,10 @@ export default function Resources() {
                 </Badge>
               </div>
               <ChevronRight className="w-5 h-5 text-gray-400" />
-              <span className="text-gray-900 font-semibold text-lg">{currentResource.title}</span>
+              <span className="text-gray-900 font-semibold text-lg">{currentResource.category}</span>
             </div>
           </div>
+
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {/* Main Content Area */}
             <div className="lg:col-span-2">
@@ -395,7 +432,7 @@ export default function Resources() {
                       <Badge className="bg-guiitar-primary text-white px-3 py-1">{currentResource.category}</Badge>
                     </div>
                   </div>
-                  <CardTitle className="text-3xl font-bold mb-3 text-gray-900">{currentResource.title}</CardTitle>
+                  <CardTitle className="text-3xl font-bold mb-3 text-gray-900">{currentResource.category}</CardTitle>
                   <CardDescription className="text-lg text-gray-600 leading-relaxed">
                     {currentResource.description}
                   </CardDescription>
@@ -437,10 +474,33 @@ export default function Resources() {
                 </CardContent>
               </Card>
             </div>
+
             {/* Enhanced Sidebar */}
             <div className="lg:col-span-1 space-y-6">
               {/* Resource Information Card */}
+              
+
               {/* Related Resources */}
+              {relatedResources.length > 0 && (
+                <Card className="shadow-md">
+                  <CardHeader className="pb-4">
+                    <CardTitle className="text-lg">Related Resources</CardTitle>
+                  </CardHeader>
+                  <CardContent className="space-y-4">
+                    {relatedResources.map((resource) => (
+                      <div
+                        key={resource.id}
+                        className="p-3 border rounded-lg hover:bg-gray-50 cursor-pointer transition-colors"
+                        onClick={() => handleResourceClick(resource.slug)}
+                      >
+                        <h4 className="font-medium text-sm text-gray-900 mb-1">{resource.title}</h4>
+                        <p className="text-xs text-gray-600 line-clamp-2">{resource.description}</p>
+                        <p className="text-xs text-gray-500 mt-2">{formatDate(resource.uploadDate)}</p>
+                      </div>
+                    ))}
+                  </CardContent>
+                </Card>
+              )}
             </div>
           </div>
         </div>
@@ -465,6 +525,7 @@ export default function Resources() {
             </div>
           </div>
         </section>
+
         {/* Header - add pt-16 to account for fixed navbar */}
         <div className="bg-white border-b">
           <div className="max-w-7xl mx-auto px-4 py-6">
@@ -489,6 +550,7 @@ export default function Resources() {
                 </SelectContent>
               </Select>
             </div>
+
             {/* Category Filters - Mobile Dropdown + Desktop Buttons */}
             <div className="mb-4">
               {/* Mobile Dropdown */}
@@ -513,6 +575,7 @@ export default function Resources() {
                   </SelectContent>
                 </Select>
               </div>
+
               {/* Desktop Buttons */}
               <div className="hidden sm:flex flex-wrap gap-2">
                 {categories.map((category) => (
@@ -532,10 +595,12 @@ export default function Resources() {
                 ))}
               </div>
             </div>
+
             {/* Results count */}
             <p className="text-sm text-gray-600">Showing {sortedResources.length} resources</p>
           </div>
         </div>
+
         {/* Resources Grid */}
         <div className="max-w-7xl mx-auto px-4 py-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -563,7 +628,7 @@ export default function Resources() {
                     <div className="flex flex-wrap gap-2">
                       {resource.tags.slice(0, 3).map((tag) => (
                         <Badge key={tag} variant="outline" className="text-xs px-2 py-1 text-gray-600 border-gray-300">
-                          <Tag className="w-3 h-3 mr-1" />
+                          <Tag className="w-3 h-3 mr-1 " />
                           {tag}
                         </Badge>
                       ))}
@@ -575,7 +640,7 @@ export default function Resources() {
                     </div>
                     {/* Meta info */}
                     <div className="flex items-center justify-between text-sm text-gray-500">
-                      <div className="flex items-center gap-1">
+                      <div className="flex items-center  gap-1">
                         <User className="w-4 h-4" />
                         <span>Last updated</span>
                       </div>
@@ -602,6 +667,7 @@ export default function Resources() {
               </Card>
             ))}
           </div>
+
           {/* No results */}
           {sortedResources.length === 0 && (
             <div className="text-center py-12">
