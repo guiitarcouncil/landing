@@ -478,34 +478,7 @@ export default function Resources() {
             {/* Enhanced Sidebar */}
             <div className="lg:col-span-1 space-y-6">
               {/* Resource Information Card */}
-              <Card className="shadow-md">
-                <CardHeader className="pb-4">
-                  <CardTitle className="text-lg">Resource Information</CardTitle>
-                </CardHeader>
-                <CardContent className="space-y-4">
-                  <div className="flex items-center gap-3">
-                    <Calendar className="w-5 h-5 text-gray-500" />
-                    <div>
-                      <p className="text-sm font-medium text-gray-700">Upload Date</p>
-                      <p className="text-sm text-gray-600">{formatDateLong(currentResource.uploadDate)}</p>
-                    </div>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <User className="w-5 h-5 text-gray-500" />
-                    <div>
-                      <p className="text-sm font-medium text-gray-700">Uploaded By</p>
-                      <p className="text-sm text-gray-600">{currentResource.uploadedBy}</p>
-                    </div>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <FileText className="w-5 h-5 text-gray-500" />
-                    <div>
-                      <p className="text-sm font-medium text-gray-700">Type</p>
-                      <p className="text-sm text-gray-600 capitalize">{currentResource.type}</p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
+              
 
               {/* Related Resources */}
               {relatedResources.length > 0 && (
